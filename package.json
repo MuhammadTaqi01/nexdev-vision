@@ -1,0 +1,13 @@
+{
+  "name": "nexdev-vision",
+  "version": "1.0.0",
+  "description": "NexDev Vision website with Vercel serverless contact form",
+  "private": true,
+  "main": "index.html",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.16"
+  }
+}

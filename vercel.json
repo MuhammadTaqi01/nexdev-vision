@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/api/send-mail", "destination": "/api/send-mail.js" },
+    { "source": "/send-mail.php", "destination": "/api/send-mail.js" }
+  ]
+}
