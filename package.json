@@ -5,6 +5,7 @@
   "private": true,
   "main": "index.html",
   "scripts": {
+    "build": "echo 'Build complete'",
     "start": "node server.js"
   },
   "dependencies": {
