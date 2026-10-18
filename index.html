@@ -222,7 +222,7 @@
     background:radial-gradient(circle,rgba(30,160,220,.22),rgba(10,40,70,.04) 45%,transparent 70%);
     pointer-events:none;
   }
-  .hero-top{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;}
+  .hero-top{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;}
 
   .hero-badge{
     display:inline-flex;align-items:center;gap:10px;
@@ -243,9 +243,9 @@
 
   .hero h1{
     font-family:var(--display);font-weight:800;
-    font-size:clamp(2.5rem,7.5vw,5.5rem);
-    line-height:1.02;letter-spacing:-.015em;text-transform:uppercase;
-    margin:0 0 26px;
+    font-size:clamp(1.9rem,3.8vw,3.3rem);
+    line-height:1.1;letter-spacing:-.015em;text-transform:uppercase;
+    margin:0 0 22px;
   }
   .hero h1 .l1{color:var(--brand-navy);}
   .hero h1 .l2{
@@ -318,11 +318,11 @@
   .chip-icon{color:var(--brand-cyan);font-size:.85rem;}
 
   /* Hero Logo Card */
-  .logo-card-wrap{perspective:1000px;position:relative;}
+  .logo-card-wrap{perspective:1000px;position:relative;display:flex;justify-content:center;}
   .logo-card{
-    position:relative;margin:0;border:1px solid rgba(30,160,220,0.35);border-radius:14px;
-    background:#ffffff;overflow:hidden;
-    box-shadow:0 25px 60px -10px rgba(10,40,70,0.16), 0 0 30px rgba(30,160,220,0.18);
+    position:relative;margin:0 auto;border:1px solid rgba(30,160,220,0.35);border-radius:18px;
+    background:#ffffff;overflow:hidden;width:100%;max-width:520px;
+    box-shadow:0 25px 60px -10px rgba(10,40,70,0.16), 0 0 35px rgba(30,160,220,0.22);
     transition:transform .3s ease,box-shadow .3s ease;
     animation:floatCard 6s ease-in-out infinite;
   }
@@ -1132,7 +1132,7 @@
 
   @media (max-width:960px){
     .hero-top{grid-template-columns:1fr;gap:40px;}
-    .logo-card{max-width:380px;}
+    .logo-card{max-width:440px;}
     .stats{grid-template-columns:1fr 1fr;}
     .svc-grid,.studio-grid,.contact-grid{grid-template-columns:1fr;}
     .pricing-grid{grid-template-columns:1fr;max-width:540px;margin:0 auto;}
