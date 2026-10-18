@@ -913,7 +913,7 @@
     color:var(--brand-cyan-deep);font-size:.7rem;pointer-events:none;
   }
   .price-card.tier-hidden{
-    display:none;
+    display:none !important;
   }
 
   /* ---------- cursor-reactive background ---------- */
@@ -2701,6 +2701,7 @@
       chip.classList.add('on');
       filterPortfolio(chip.dataset.f);
     });
+  });
   filterPortfolio('all');
 
   // Service-wise Pricing Switcher
