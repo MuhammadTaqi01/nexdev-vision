@@ -886,6 +886,35 @@
   .price-card .btn{
     width:100%;justify-content:center;text-align:center;
   }
+  .pricing-selector-wrap{
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    gap:12px;margin:0 auto 38px;text-align:center;max-width:540px;
+  }
+  .pricing-select-label{
+    font-family:var(--mono);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--brand-cyan-deep);font-weight:700;display:inline-flex;align-items:center;gap:8px;
+  }
+  .pricing-select-box{
+    position:relative;width:100%;max-width:380px;
+  }
+  .pricing-select{
+    width:100%;font-family:var(--sans);font-size:.98rem;font-weight:600;
+    color:var(--brand-navy);background:rgba(255,255,255,0.95);
+    border:2px solid var(--brand-cyan);border-radius:10px;
+    padding:13px 40px 13px 18px;cursor:pointer;outline:none;
+    box-shadow:0 6px 20px rgba(30,160,220,0.18);
+    transition:all .25s ease;appearance:none;-webkit-appearance:none;
+  }
+  .pricing-select:focus,.pricing-select:hover{
+    box-shadow:0 8px 24px rgba(30,160,220,0.32);border-color:var(--brand-cyan-deep);
+  }
+  .pricing-select-box::after{
+    content:"▼";position:absolute;right:16px;top:50%;transform:translateY(-50%);
+    color:var(--brand-cyan-deep);font-size:.7rem;pointer-events:none;
+  }
+  .price-card.tier-hidden{
+    display:none;
+  }
 
   /* ---------- cursor-reactive background ---------- */
   #bg{position:fixed;inset:0;z-index:-1;pointer-events:none;display:block;}
@@ -1991,77 +2020,476 @@
 <section id="pricing">
   <div class="wrap">
     <div class="sec-head rv">
-      <span class="sec-num">06 // TRANSPARENT PRICING</span>
-      <span class="label">Simple tiers · No hidden costs</span>
+      <span class="sec-num">06 // PACKAGES &amp; PRICING</span>
+      <span class="label">Affordable · Transparent · Small Business Ready</span>
     </div>
-    <h2 class="sec-title rv">Predictable investment.<br><span class="title-highlight">Exceptional delivery.</span></h2>
-    <p class="sec-sub rv">Every project is built with clean architecture, modern engineering, and zero vendor lock-in. Choose the package that suits your stage or get a custom scope.</p>
+    <h2 class="sec-title rv">Tailored packages,<br><span class="title-highlight">accessible rates.</span></h2>
+    <p class="sec-sub rv">Select a service to view affordable, straightforward packages built for small businesses and growing teams. No bloated fees, only impactful essentials.</p>
 
-    <div class="pricing-grid">
-      <!-- Starter Tier -->
-      <div class="price-card rv">
-        <div class="price-tier">Starter</div>
-        <h3>Launchpad</h3>
-        <p class="price-desc">Ideal for small businesses, startups, and founders needing an impactful online presence fast.</p>
+    <!-- Service Switcher Dropdown -->
+    <div class="pricing-selector-wrap rv">
+      <span class="pricing-select-label">Select Service to View Packages:</span>
+      <div class="pricing-select-box">
+        <select id="pricingServiceSelect" class="pricing-select" aria-label="Select Service for Pricing Packages">
+          <option value="web">Web Development</option>
+          <option value="design">Design &amp; Branding</option>
+          <option value="seo">SEO Optimization</option>
+          <option value="automation">Business Automation</option>
+          <option value="saas">SaaS Solutions</option>
+          <option value="analytics">Data Analytics</option>
+          <option value="aiml">AI &amp; Machine Learning</option>
+          <option value="dataeng">Data Engineering</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="pricing-grid" id="pricingGrid">
+      <!-- 1. WEB DEVELOPMENT -->
+      <div class="price-card rv" data-svc="web">
+        <div class="price-tier">Basic</div>
+        <h3>Starter Website</h3>
+        <p class="price-desc">Clean single-page landing site to establish credibility quickly.</p>
+        <div class="price-figure">
+          <span class="currency">$</span>
+          <span class="amount">199</span>
+          <span class="period">/ project</span>
+        </div>
+        <ul class="price-features">
+          <li>1-3 Responsive Pages</li>
+          <li>Mobile &amp; Speed Optimized</li>
+          <li>Contact Form with Email Alerts</li>
+          <li>Free 1 Month Hosting Support</li>
+        </ul>
+        <a class="btn outline" href="#contact">Choose Starter ↗</a>
+      </div>
+
+      <div class="price-card featured rv" data-svc="web">
+        <span class="price-badge">Popular</span>
+        <div class="price-tier">Standard</div>
+        <h3>Business Growth</h3>
+        <p class="price-desc">Full professional website for brands ready to acquire regular clients.</p>
+        <div class="price-figure">
+          <span class="currency">$</span>
+          <span class="amount">399</span>
+          <span class="period">/ project</span>
+        </div>
+        <ul class="price-features">
+          <li>Up to 6 Custom Pages</li>
+          <li>Modern UI/UX &amp; Smooth Animations</li>
+          <li>On-Page SEO &amp; Speed Booster</li>
+          <li>CMS / Admin Panel Access</li>
+        </ul>
+        <a class="btn solid" href="#contact">Choose Business ↗</a>
+      </div>
+
+      <div class="price-card rv" data-svc="web">
+        <div class="price-tier">Advanced</div>
+        <h3>Full Custom Web</h3>
+        <p class="price-desc">Custom web app or dynamic e-commerce with backend functionality.</p>
+        <div class="price-figure">
+          <span class="currency">$</span>
+          <span class="amount">699</span>
+          <span class="period">/ project</span>
+        </div>
+        <ul class="price-features">
+          <li>E-Commerce or Custom Web App</li>
+          <li>Python / Java / Laravel Backend</li>
+          <li>Payment Gateway &amp; User Accounts</li>
+          <li>2 Months Priority Support</li>
+        </ul>
+        <a class="btn outline" href="#contact">Choose Advanced ↗</a>
+      </div>
+
+      <!-- 2. DESIGN & BRANDING -->
+      <div class="price-card rv tier-hidden" data-svc="design">
+        <div class="price-tier">Basic</div>
+        <h3>Logo Kit</h3>
+        <p class="price-desc">Clean brand mark and vector files ready for your business start.</p>
+        <div class="price-figure">
+          <span class="currency">$</span>
+          <span class="amount">149</span>
+          <span class="period">/ project</span>
+        </div>
+        <ul class="price-features">
+          <li>3 Logo Concepts &amp; Revisions</li>
+          <li>High-Res Vector Files (SVG, PNG, PDF)</li>
+          <li>Color Palette &amp; Font Guide</li>
+          <li>Social Media Profile Kit</li>
+        </ul>
+        <a class="btn outline" href="#contact">Choose Logo Kit ↗</a>
+      </div>
+
+      <div class="price-card featured rv tier-hidden" data-svc="design">
+        <span class="price-badge">Popular</span>
+        <div class="price-tier">Standard</div>
+        <h3>Brand Identity</h3>
+        <p class="price-desc">Complete corporate identity to stand out consistently everywhere.</p>
+        <div class="price-figure">
+          <span class="currency">$</span>
+          <span class="amount">299</span>
+          <span class="period">/ project</span>
+        </div>
+        <ul class="price-features">
+          <li>Primary Logo &amp; Submarks</li>
+          <li>Business Card &amp; Stationery Design</li>
+          <li>Social Media Banner Templates</li>
+          <li>Comprehensive Brand Style Guide</li>
+        </ul>
+        <a class="btn solid" href="#contact">Choose Identity ↗</a>
+      </div>
+
+      <div class="price-card rv tier-hidden" data-svc="design">
+        <div class="price-tier">Advanced</div>
+        <h3>Full UI / UX Suite</h3>
+        <p class="price-desc">Pixel-perfect Figma designs for mobile apps or complex websites.</p>
         <div class="price-figure">
           <span class="currency">$</span>
           <span class="amount">499</span>
           <span class="period">/ project</span>
         </div>
         <ul class="price-features">
-          <li>Custom Responsive Website (Up to 5 Pages)</li>
-          <li>Brand Identity Kit (Logo, Colors &amp; Typography)</li>
-          <li>Essential On-Page SEO &amp; Fast CDN Setup</li>
-          <li>Contact Form with Direct SMTP Delivery</li>
-          <li>Mobile &amp; Speed Optimized Performance</li>
-          <li>2 Weeks Post-Launch Support</li>
+          <li>Full Figma UI/UX Wireframes &amp; Mockups</li>
+          <li>Interactive Clickable Prototype</li>
+          <li>Component Design System &amp; Assets</li>
+          <li>Developer-Ready Handoff Files</li>
         </ul>
-        <a class="btn outline" href="#contact">Get Started ↗</a>
+        <a class="btn outline" href="#contact">Choose UI/UX ↗</a>
       </div>
 
-      <!-- Growth Tier (Featured) -->
-      <div class="price-card featured rv">
-        <span class="price-badge">Most Popular</span>
-        <div class="price-tier">Professional</div>
-        <h3>Scale &amp; Automate</h3>
-        <p class="price-desc">Complete digital solution for growing companies needing custom web, automation, and analytics.</p>
+      <!-- 3. SEO OPTIMIZATION -->
+      <div class="price-card rv tier-hidden" data-svc="seo">
+        <div class="price-tier">Basic</div>
+        <h3>SEO Audit &amp; Fix</h3>
+        <p class="price-desc">One-time audit and critical technical fixes to get indexed correctly.</p>
         <div class="price-figure">
           <span class="currency">$</span>
-          <span class="amount">1,299</span>
+          <span class="amount">149</span>
+          <span class="period">/ one-time</span>
+        </div>
+        <ul class="price-features">
+          <li>Full Site Health &amp; Speed Audit</li>
+          <li>Meta Tags &amp; Sitemap Optimization</li>
+          <li>Google Search Console Setup</li>
+          <li>Actionable Ranking Report</li>
+        </ul>
+        <a class="btn outline" href="#contact">Choose Audit ↗</a>
+      </div>
+
+      <div class="price-card featured rv tier-hidden" data-svc="seo">
+        <span class="price-badge">Popular</span>
+        <div class="price-tier">Standard</div>
+        <h3>Local &amp; Organic</h3>
+        <p class="price-desc">Continuous search optimization to rank for targeted buyer terms.</p>
+        <div class="price-figure">
+          <span class="currency">$</span>
+          <span class="amount">299</span>
+          <span class="period">/ month</span>
+        </div>
+        <ul class="price-features">
+          <li>Target Keyword Research (15 Keywords)</li>
+          <li>On-Page Content Optimization</li>
+          <li>Google Business Profile Ranking</li>
+          <li>Monthly Traffic &amp; Position Report</li>
+        </ul>
+        <a class="btn solid" href="#contact">Choose Organic ↗</a>
+      </div>
+
+      <div class="price-card rv tier-hidden" data-svc="seo">
+        <div class="price-tier">Advanced</div>
+        <h3>Growth Dominance</h3>
+        <p class="price-desc">Aggressive organic scaling with content strategy and backlinks.</p>
+        <div class="price-figure">
+          <span class="currency">$</span>
+          <span class="amount">499</span>
+          <span class="period">/ month</span>
+        </div>
+        <ul class="price-features">
+          <li>Comprehensive Keyword Coverage (35+ Keywords)</li>
+          <li>Competitor Gap Analysis &amp; Backlinks</li>
+          <li>Content Writing &amp; Blog Optimization</li>
+          <li>Bi-Weekly Growth Strategy Calls</li>
+        </ul>
+        <a class="btn outline" href="#contact">Choose Growth ↗</a>
+      </div>
+
+      <!-- 4. BUSINESS AUTOMATION -->
+      <div class="price-card rv tier-hidden" data-svc="automation">
+        <div class="price-tier">Basic</div>
+        <h3>Task Automation</h3>
+        <p class="price-desc">Eliminate manual copy-pasting and repetitive weekly chores.</p>
+        <div class="price-figure">
+          <span class="currency">$</span>
+          <span class="amount">199</span>
           <span class="period">/ project</span>
         </div>
         <ul class="price-features">
-          <li>Full Custom Web Application or E-Commerce</li>
-          <li>Backend Integration (Python / Java / Laravel)</li>
-          <li>Automated Workflows &amp; Third-Party API Integration</li>
-          <li>Interactive BI Analytics Dashboard Setup</li>
-          <li>Advanced Technical SEO &amp; Speed Optimization</li>
-          <li>Complete Source Code Ownership &amp; CI/CD</li>
-          <li>1 Month Priority Support &amp; Iteration</li>
+          <li>Up to 2 Automated Workflows</li>
+          <li>Email / Lead Notification Alerts</li>
+          <li>Google Sheets / CRM Sync</li>
+          <li>Testing &amp; Step-by-Step Guide</li>
         </ul>
-        <a class="btn solid" href="#contact">Choose Professional ↗</a>
+        <a class="btn outline" href="#contact">Choose Task Auto ↗</a>
       </div>
 
-      <!-- Enterprise Tier -->
-      <div class="price-card rv">
-        <div class="price-tier">Enterprise</div>
-        <h3>Custom AI &amp; Cloud</h3>
-        <p class="price-desc">Tailored for mature businesses requiring bespoke SaaS, Data Engineering, or AI/ML systems.</p>
+      <div class="price-card featured rv tier-hidden" data-svc="automation">
+        <span class="price-badge">Popular</span>
+        <div class="price-tier">Standard</div>
+        <h3>Workflow Integration</h3>
+        <p class="price-desc">Connect all your tools to run business operations automatically.</p>
         <div class="price-figure">
           <span class="currency">$</span>
-          <span class="amount">2,499</span>
+          <span class="amount">379</span>
           <span class="period">/ project</span>
         </div>
         <ul class="price-features">
-          <li>Custom SaaS Architecture &amp; Multi-Tenant Setup</li>
-          <li>Bespoke AI / LLM Model Integration &amp; Agents</li>
-          <li>Scalable ETL/ELT Data Engineering Pipelines</li>
-          <li>Stripe Subscription Billing &amp; RBAC Security</li>
-          <li>Containerized Cloud Infrastructure (Docker &amp; Cloud)</li>
-          <li>Dedicated Project Lead &amp; Weekly Demos</li>
-          <li>3 Months Continuous Care &amp; Maintenance</li>
+          <li>Multi-App Workflow (Zapier, Make, APIs)</li>
+          <li>Automated Invoicing &amp; Customer Follow-ups</li>
+          <li>Error Handling &amp; Auto-Retry Logic</li>
+          <li>1 Month Monitoring &amp; Support</li>
         </ul>
-        <a class="btn outline" href="#contact">Request Custom Scope ↗</a>
+        <a class="btn solid" href="#contact">Choose Workflow ↗</a>
+      </div>
+
+      <div class="price-card rv tier-hidden" data-svc="automation">
+        <div class="price-tier">Advanced</div>
+        <h3>Custom Auto Scripts</h3>
+        <p class="price-desc">Dedicated Python bots and custom API bridges for complex operations.</p>
+        <div class="price-figure">
+          <span class="currency">$</span>
+          <span class="amount">599</span>
+          <span class="period">/ project</span>
+        </div>
+        <ul class="price-features">
+          <li>Custom Python Automation Bots</li>
+          <li>Automated Web Scraping &amp; Data Feeds</li>
+          <li>Database &amp; Webhook Synchronization</li>
+          <li>Full Source Code &amp; Cloud Deployment</li>
+        </ul>
+        <a class="btn outline" href="#contact">Choose Custom Auto ↗</a>
+      </div>
+
+      <!-- 5. SAAS SOLUTIONS -->
+      <div class="price-card rv tier-hidden" data-svc="saas">
+        <div class="price-tier">Basic</div>
+        <h3>SaaS MVP Sprint</h3>
+        <p class="price-desc">Launch your core software idea to market fast without overbuilding.</p>
+        <div class="price-figure">
+          <span class="currency">$</span>
+          <span class="amount">499</span>
+          <span class="period">/ project</span>
+        </div>
+        <ul class="price-features">
+          <li>Core SaaS Feature Implementation</li>
+          <li>User Authentication &amp; Profile System</li>
+          <li>Responsive Dashboard UI</li>
+          <li>Fast Cloud Hosting Setup</li>
+        </ul>
+        <a class="btn outline" href="#contact">Choose MVP Sprint ↗</a>
+      </div>
+
+      <div class="price-card featured rv tier-hidden" data-svc="saas">
+        <span class="price-badge">Popular</span>
+        <div class="price-tier">Standard</div>
+        <h3>SaaS Launch Ready</h3>
+        <p class="price-desc">Production SaaS ready to accept subscriptions and onboard users.</p>
+        <div class="price-figure">
+          <span class="currency">$</span>
+          <span class="amount">899</span>
+          <span class="period">/ project</span>
+        </div>
+        <ul class="price-features">
+          <li>Multi-Tenant Architecture</li>
+          <li>Stripe Subscription Billing Integration</li>
+          <li>Admin Management Dashboard</li>
+          <li>Automated Emails &amp; User Onboarding</li>
+        </ul>
+        <a class="btn solid" href="#contact">Choose Launch Ready ↗</a>
+      </div>
+
+      <div class="price-card rv tier-hidden" data-svc="saas">
+        <div class="price-tier">Advanced</div>
+        <h3>Scale SaaS Platform</h3>
+        <p class="price-desc">High-load SaaS platform with role management and cloud scalability.</p>
+        <div class="price-figure">
+          <span class="currency">$</span>
+          <span class="amount">1,399</span>
+          <span class="period">/ project</span>
+        </div>
+        <ul class="price-features">
+          <li>Role-Based Access Control (RBAC)</li>
+          <li>Docker Containerization &amp; Autoscaling</li>
+          <li>REST API Layer &amp; Webhook System</li>
+          <li>2 Months Technical Maintenance</li>
+        </ul>
+        <a class="btn outline" href="#contact">Choose Scale SaaS ↗</a>
+      </div>
+
+      <!-- 6. DATA ANALYTICS -->
+      <div class="price-card rv tier-hidden" data-svc="analytics">
+        <div class="price-tier">Basic</div>
+        <h3>KPI Dashboard</h3>
+        <p class="price-desc">Single unified dashboard to see your main sales and traffic metrics.</p>
+        <div class="price-figure">
+          <span class="currency">$</span>
+          <span class="amount">199</span>
+          <span class="period">/ project</span>
+        </div>
+        <ul class="price-features">
+          <li>1 Interactive BI Dashboard (Power BI / Looker)</li>
+          <li>Sales, Revenue &amp; Lead Tracking</li>
+          <li>Clean Data Connection (Excel, Sheets, SQL)</li>
+          <li>Easy-to-Read Metric Visuals</li>
+        </ul>
+        <a class="btn outline" href="#contact">Choose KPI Dash ↗</a>
+      </div>
+
+      <div class="price-card featured rv tier-hidden" data-svc="analytics">
+        <span class="price-badge">Popular</span>
+        <div class="price-tier">Standard</div>
+        <h3>Business Intelligence</h3>
+        <p class="price-desc">Deep-dive analytics to understand customers, funnels, and margins.</p>
+        <div class="price-figure">
+          <span class="currency">$</span>
+          <span class="amount">399</span>
+          <span class="period">/ project</span>
+        </div>
+        <ul class="price-features">
+          <li>Multi-Page Executive Dashboard</li>
+          <li>Customer Retention &amp; Cohort Analysis</li>
+          <li>Automated Daily / Weekly Reports</li>
+          <li>Actionable Profit &amp; Cost Insights</li>
+        </ul>
+        <a class="btn solid" href="#contact">Choose BI Suite ↗</a>
+      </div>
+
+      <div class="price-card rv tier-hidden" data-svc="analytics">
+        <div class="price-tier">Advanced</div>
+        <h3>Predictive Analytics</h3>
+        <p class="price-desc">Machine-assisted forecasting and real-time operational metrics.</p>
+        <div class="price-figure">
+          <span class="currency">$</span>
+          <span class="amount">699</span>
+          <span class="period">/ project</span>
+        </div>
+        <ul class="price-features">
+          <li>Predictive Sales &amp; Churn Modeling</li>
+          <li>Real-Time Live Data Streaming</li>
+          <li>Custom SQL Queries &amp; Data Models</li>
+          <li>Team Training &amp; Dashboard Walkthrough</li>
+        </ul>
+        <a class="btn outline" href="#contact">Choose Predictive ↗</a>
+      </div>
+
+      <!-- 7. AI & MACHINE LEARNING -->
+      <div class="price-card rv tier-hidden" data-svc="aiml">
+        <div class="price-tier">Basic</div>
+        <h3>Smart AI Chatbot</h3>
+        <p class="price-desc">Customer support AI bot trained directly on your business documents.</p>
+        <div class="price-figure">
+          <span class="currency">$</span>
+          <span class="amount">249</span>
+          <span class="period">/ project</span>
+        </div>
+        <ul class="price-features">
+          <li>Custom ChatGPT / Claude Trained on Your Data</li>
+          <li>Website Floating Chatbot Widget</li>
+          <li>Lead Capture &amp; Instant Answers</li>
+          <li>Simple Knowledge Base Updates</li>
+        </ul>
+        <a class="btn outline" href="#contact">Choose AI Chatbot ↗</a>
+      </div>
+
+      <div class="price-card featured rv tier-hidden" data-svc="aiml">
+        <span class="price-badge">Popular</span>
+        <div class="price-tier">Standard</div>
+        <h3>AI Agent &amp; Workflow</h3>
+        <p class="price-desc">Automate complex text and reasoning tasks with autonomous AI agents.</p>
+        <div class="price-figure">
+          <span class="currency">$</span>
+          <span class="amount">499</span>
+          <span class="period">/ project</span>
+        </div>
+        <ul class="price-features">
+          <li>Custom AI Workflows &amp; Agent Tool Calling</li>
+          <li>Document Parsing &amp; Auto Summaries</li>
+          <li>Vector Database Integration (RAG)</li>
+          <li>Prompt Engineering &amp; Cost Optimization</li>
+        </ul>
+        <a class="btn solid" href="#contact">Choose AI Agent ↗</a>
+      </div>
+
+      <div class="price-card rv tier-hidden" data-svc="aiml">
+        <div class="price-tier">Advanced</div>
+        <h3>Custom ML Model</h3>
+        <p class="price-desc">Tailored machine learning pipeline for recommendation or scoring.</p>
+        <div class="price-figure">
+          <span class="currency">$</span>
+          <span class="amount">899</span>
+          <span class="period">/ project</span>
+        </div>
+        <ul class="price-features">
+          <li>Custom Classification or Prediction Model</li>
+          <li>FastAPI High-Speed Inference API</li>
+          <li>Model Training, Validation &amp; Metrics</li>
+          <li>Cloud Deployment &amp; Complete Code</li>
+        </ul>
+        <a class="btn outline" href="#contact">Choose Custom ML ↗</a>
+      </div>
+
+      <!-- 8. DATA ENGINEERING -->
+      <div class="price-card rv tier-hidden" data-svc="dataeng">
+        <div class="price-tier">Basic</div>
+        <h3>Data Cleaning &amp; ETL</h3>
+        <p class="price-desc">Clean up disorganized spreadsheets and set up scheduled data syncs.</p>
+        <div class="price-figure">
+          <span class="currency">$</span>
+          <span class="amount">199</span>
+          <span class="period">/ project</span>
+        </div>
+        <ul class="price-features">
+          <li>Data Extraction &amp; Cleaning Script</li>
+          <li>Automated Scheduled Sync (Daily / Weekly)</li>
+          <li>Schema Validation &amp; Error Logs</li>
+          <li>Clean Database Export</li>
+        </ul>
+        <a class="btn outline" href="#contact">Choose ETL Sync ↗</a>
+      </div>
+
+      <div class="price-card featured rv tier-hidden" data-svc="dataeng">
+        <span class="price-badge">Popular</span>
+        <div class="price-tier">Standard</div>
+        <h3>Data Pipeline Setup</h3>
+        <p class="price-desc">Reliable pipeline connecting APIs, databases, and reporting tools.</p>
+        <div class="price-figure">
+          <span class="currency">$</span>
+          <span class="amount">449</span>
+          <span class="period">/ project</span>
+        </div>
+        <ul class="price-features">
+          <li>Automated Multi-Source Pipeline (Airflow / Cron)</li>
+          <li>PostgreSQL / MySQL Data Warehouse Setup</li>
+          <li>Data Transformation &amp; Deduplication</li>
+          <li>Monitoring &amp; Alert Notifications</li>
+        </ul>
+        <a class="btn solid" href="#contact">Choose Pipeline ↗</a>
+      </div>
+
+      <div class="price-card rv tier-hidden" data-svc="dataeng">
+        <div class="price-tier">Advanced</div>
+        <h3>Warehouse Architecture</h3>
+        <p class="price-desc">Robust enterprise data warehouse for high-speed queries and scaling.</p>
+        <div class="price-figure">
+          <span class="currency">$</span>
+          <span class="amount">799</span>
+          <span class="period">/ project</span>
+        </div>
+        <ul class="price-features">
+          <li>Modern Cloud Data Warehouse (Snowflake / BigQuery)</li>
+          <li>Streaming Data Ingestion &amp; Real-time Views</li>
+          <li>Data Modeling &amp; Query Acceleration</li>
+          <li>Documentation &amp; Maintenance Support</li>
+        </ul>
+        <a class="btn outline" href="#contact">Choose Warehouse ↗</a>
       </div>
     </div>
   </div>
@@ -2273,8 +2701,30 @@
       chip.classList.add('on');
       filterPortfolio(chip.dataset.f);
     });
-  });
   filterPortfolio('all');
+
+  // Service-wise Pricing Switcher
+  (function(){
+    var select = document.getElementById('pricingServiceSelect');
+    var cards = document.querySelectorAll('#pricingGrid .price-card');
+    if(!select || !cards.length) return;
+
+    function updatePricing(svc){
+      cards.forEach(function(card){
+        if(card.dataset.svc === svc){
+          card.classList.remove('tier-hidden');
+        } else {
+          card.classList.add('tier-hidden');
+        }
+      });
+    }
+
+    select.addEventListener('change', function(){
+      updatePricing(this.value);
+    });
+
+    updatePricing(select.value || 'web');
+  })();
 
   // Back to top smooth button
   var toTop = document.getElementById('toTop');
