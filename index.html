@@ -432,6 +432,277 @@
     text-shadow:0 0 10px rgba(56,189,248,0.8);
   }
 
+  /* ---------- section divider banners (Right Tech / Nexdev Vision style) ---------- */
+  .brand-banner-strip{
+    position:relative;width:100%;overflow:hidden;
+    padding:44px 0;
+    text-align:center;
+    display:flex;align-items:center;justify-content:center;
+    border-top:1px solid rgba(30,160,220,0.18);
+    border-bottom:1px solid rgba(30,160,220,0.18);
+  }
+  .brand-banner-strip.banner-dark{
+    background:linear-gradient(135deg, #06192d 0%, #0a2846 60%, #06192d 100%);
+    box-shadow:inset 0 10px 30px rgba(0,0,0,0.25);
+  }
+  .brand-banner-strip.banner-blue{
+    background:linear-gradient(135deg, #0284c7 0%, #1ea0dc 50%, #00d2ff 100%);
+    box-shadow:inset 0 10px 30px rgba(10,40,70,0.2);
+  }
+  .brand-banner-strip.banner-soft{
+    background:linear-gradient(135deg, #e0f2fe 0%, #f0f7fb 50%, #e0f2fe 100%);
+    border-color:rgba(30,160,220,0.25);
+  }
+  .brand-banner-text{
+    font-family:var(--display);font-weight:900;
+    font-size:clamp(2.4rem, 7.5vw, 5.8rem);
+    text-transform:uppercase;letter-spacing:.05em;line-height:1;margin:0;
+    user-select:none;
+  }
+  .banner-dark .brand-banner-text{
+    color:rgba(255,255,255,0.95);
+    text-shadow:0 0 40px rgba(30,160,220,0.45);
+  }
+  .banner-dark .brand-banner-text .highlight{
+    color:#00d2ff;
+    text-shadow:0 0 35px rgba(0,210,255,0.7);
+  }
+  .banner-blue .brand-banner-text{
+    color:#ffffff;
+    text-shadow:0 4px 20px rgba(6,25,45,0.25);
+  }
+  .banner-blue .brand-banner-text .highlight{
+    color:#06192d;
+    background:rgba(255,255,255,0.2);
+    padding:2px 14px;border-radius:10px;
+    -webkit-text-fill-color:initial;
+  }
+  .banner-soft .brand-banner-text{
+    color:var(--brand-navy);
+    letter-spacing:.08em;
+  }
+  .banner-soft .brand-banner-text .highlight{
+    color:var(--brand-cyan-deep);
+  }
+
+  /* Reference style Section Heading with Red/Cyan Accent Underline */
+  .ref-sec-head{
+    text-align:center;
+    max-width:760px;
+    margin:0 auto 48px;
+  }
+  .ref-sec-head.light-theme .ref-title{
+    color:var(--brand-navy);
+  }
+  .ref-sec-head.dark-theme .ref-title{
+    color:#ffffff;
+  }
+  .ref-title{
+    font-family:var(--display);font-weight:800;
+    font-size:clamp(2rem, 4.4vw, 3.2rem);
+    letter-spacing:-.01em;line-height:1.15;
+    margin:0 0 16px;
+  }
+  .ref-bar{
+    display:block;width:56px;height:4px;
+    background:linear-gradient(90deg, var(--brand-cyan), var(--brand-cyan-light));
+    border-radius:2px;
+    margin:0 auto 16px;
+  }
+  .ref-sec-head.text-left{
+    text-align:left;
+    margin-left:0;
+  }
+  .ref-sec-head.text-left .ref-bar{
+    margin-left:0;
+  }
+  .ref-desc{
+    font-size:1.02rem;color:var(--muted);margin:0;line-height:1.65;
+  }
+  .ref-sec-head.dark-theme .ref-desc{
+    color:rgba(255,255,255,0.85);
+  }
+
+  /* Compact Services Grid (Icon + Heading Only as in Reference Site) */
+  .services-ref-section{
+    background:linear-gradient(135deg, #0284c7 0%, #1ea0dc 50%, #00a6e8 100%);
+    color:#ffffff;
+    padding:90px 0;
+    position:relative;
+    box-shadow:inset 0 10px 30px rgba(6,25,45,0.18), inset 0 -10px 30px rgba(6,25,45,0.18);
+  }
+  .svc-ref-grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:28px 20px;
+    margin-top:20px;
+  }
+  .svc-ref-card{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:28px 18px;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(8px);
+    border:1px solid rgba(255,255,255,0.22);
+    border-radius:14px;
+    text-decoration:none;
+    color:#ffffff;
+    transition:all .3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .svc-ref-card:hover{
+    background:rgba(255,255,255,0.22);
+    border-color:rgba(255,255,255,0.55);
+    transform:translateY(-8px);
+    box-shadow:0 16px 36px rgba(6,25,45,0.25), 0 0 25px rgba(255,255,255,0.3);
+  }
+  .svc-ref-card .icon-box{
+    width:64px;height:64px;
+    border-radius:14px;
+    display:flex;align-items:center;justify-content:center;
+    background:rgba(255,255,255,0.16);
+    border:1.5px solid rgba(255,255,255,0.35);
+    font-size:1.8rem;
+    color:#ffffff;
+    margin-bottom:16px;
+    transition:transform .3s ease, background .3s ease;
+  }
+  .svc-ref-card:hover .icon-box{
+    transform:scale(1.1) rotate(4deg);
+    background:#ffffff;
+    color:var(--brand-cyan-deep);
+    box-shadow:0 6px 20px rgba(0,0,0,0.15);
+  }
+  .svc-ref-card h3{
+    font-family:var(--display);
+    font-size:1.06rem;
+    font-weight:700;
+    letter-spacing:.02em;
+    margin:0;
+    color:#ffffff;
+    line-height:1.3;
+  }
+  @media(max-width:960px){
+    .svc-ref-grid{grid-template-columns:repeat(2, 1fr);}
+  }
+  @media(max-width:540px){
+    .svc-ref-grid{grid-template-columns:1fr;}
+  }
+
+  /* Testimonials Section (Clean Quote Card Reference Style) */
+  .testimonials-section{
+    background:linear-gradient(135deg, #06192d 0%, #0a2846 60%, #0c3359 100%);
+    color:#ffffff;
+    padding:100px 0;
+    position:relative;
+    overflow:hidden;
+  }
+  .testimonials-section::before{
+    content:"";position:absolute;top:0;left:50%;width:800px;height:800px;
+    transform:translate(-50%, -50%);
+    background:radial-gradient(circle, rgba(30,160,220,0.18), transparent 70%);
+    pointer-events:none;
+  }
+  .testi-quote-mark{
+    font-size:4.8rem;line-height:1;
+    color:var(--brand-cyan);
+    font-family:var(--display);
+    text-align:center;
+    margin-bottom:8px;
+    text-shadow:0 0 25px rgba(0,210,255,0.4);
+  }
+  .testi-carousel{
+    max-width:880px;
+    margin:0 auto;
+    position:relative;
+  }
+  .testi-item{
+    display:none;
+    text-align:center;
+    animation:rise .5s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  .testi-item.active{display:block;}
+  .testi-quote{
+    font-family:var(--sans);
+    font-size:clamp(1.15rem, 2.6vw, 1.65rem);
+    font-weight:500;
+    line-height:1.55;
+    color:#f0f7fb;
+    margin:0 0 28px;
+    font-style:italic;
+  }
+  .testi-author{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:4px;
+  }
+  .testi-author .author-name{
+    font-family:var(--display);
+    font-size:1.15rem;
+    font-weight:700;
+    letter-spacing:.04em;
+    color:#ffffff;
+    text-transform:uppercase;
+  }
+  .testi-author .author-role{
+    font-family:var(--mono);
+    font-size:.76rem;
+    letter-spacing:.14em;
+    color:#38bdf8;
+    text-transform:uppercase;
+  }
+  .testi-author .author-company{
+    font-size:.84rem;
+    color:rgba(255,255,255,0.65);
+  }
+  .testi-controls{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    margin-top:36px;
+  }
+  .testi-dot{
+    width:10px;height:10px;border-radius:50%;
+    background:rgba(255,255,255,0.25);
+    border:1px solid rgba(255,255,255,0.4);
+    cursor:pointer;
+    transition:all .25s ease;
+  }
+  .testi-dot:hover{
+    background:rgba(56,189,248,0.7);
+  }
+  .testi-dot.active{
+    width:28px;border-radius:999px;
+    background:var(--brand-cyan);
+    border-color:var(--brand-cyan);
+    box-shadow:0 0 12px var(--brand-cyan);
+  }
+
+  /* Reference Style "Who We Are" Split Section */
+  .split-about{
+    display:grid;grid-template-columns:1.15fr 0.85fr;gap:48px;align-items:center;
+  }
+  .split-about-visual{
+    position:relative;
+    border-radius:16px;
+    overflow:hidden;
+    background:#ffffff;
+    border:1px solid rgba(30,160,220,0.3);
+    box-shadow:0 20px 50px -10px rgba(10,40,70,0.12), 0 0 25px rgba(30,160,220,0.12);
+    padding:20px;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .split-about-visual img{
+    width:100%;height:auto;max-height:360px;object-fit:contain;border-radius:10px;
+  }
+  @media(max-width:920px){
+    .split-about{grid-template-columns:1fr;gap:36px;}
+  }
+
   /* ---------- sections ---------- */
   section{padding:100px 0;border-top:1px solid var(--line-soft);position:relative;z-index:1;}
   .sec-head{display:flex;justify-content:space-between;align-items:baseline;gap:20px;margin-bottom:14px;flex-wrap:wrap;}
@@ -1175,6 +1446,7 @@
     <a href="#work" class="topbar-link">Work</a>
     <a href="#portfolio" class="topbar-link">Portfolio</a>
     <a href="#pricing" class="topbar-link">Pricing</a>
+    <a href="#testimonials" class="topbar-link">Testimonials</a>
     <a href="#studio" class="topbar-link">Studio</a>
     <a href="#contact" class="topbar-link">Contact</a>
   </nav>
@@ -1193,6 +1465,7 @@
     <a href="#work"><span class="mono">03</span>Work</a>
     <a href="#portfolio"><span class="mono">04</span>Portfolio</a>
     <a href="#pricing"><span class="mono">05</span>Pricing</a>
+    <a href="#testimonials"><span class="mono">06</span>Testimonials</a>
     <a href="#studio"><span class="mono">06</span>Studio</a>
     <a href="#contact"><span class="mono">07</span>Contact</a>
   </nav>
@@ -1321,122 +1594,67 @@
 </div>
 
 
-<section id="services">
+<!-- Section Divider: NEXDEV VISION / TECH THAT CROSSES BORDERS -->
+<div class="brand-banner-strip banner-dark rv">
+  <h2 class="brand-banner-text">NEXDEV <span class="highlight">VISION</span></h2>
+</div>
+
+<section id="services" class="services-ref-section">
   <div class="wrap">
-    <div class="sec-head rv">
-      <span class="sec-num">01 // WHAT WE DO</span>
-      <span class="label">Comprehensive digital solutions · one accountable team</span>
+    <div class="ref-sec-head dark-theme rv">
+      <h2 class="ref-title">Right Services For Your Success</h2>
+      <span class="ref-bar"></span>
+      <p class="ref-desc">Comprehensive digital solutions engineered for growth, high performance, and real business results.</p>
     </div>
-    <h2 class="sec-title rv">Services that move<br><span class="title-highlight">the needle</span></h2>
-    <p class="sec-sub rv">Everything below is handled end to end strategy, execution, and the follow-up that makes it stick.</p>
 
-    <div class="svc-grid">
-      <div class="svc rv" data-num="01">
-        <div class="icon">&lt;/&gt;</div>
+    <div class="svc-ref-grid">
+      <a class="svc-ref-card rv" href="#pricing" title="View Web Development Packages">
+        <div class="icon-box">&lt;/&gt;</div>
         <h3>Web Development</h3>
-        <p>Fast, responsive websites and web applications from a single landing page to a full product backend.</p>
-        <ul>
-          <li>Business sites &amp; landing pages</li>
-          <li>E-commerce &amp; customer portals</li>
-          <li>Python &amp; Java backends · React frontends</li>
-          <li>Ongoing care, fixes, and upgrades</li>
-        </ul>
-        <div class="tech"><span class="tagpill">Python</span><span class="tagpill">Java</span><span class="tagpill">React</span><span class="tagpill">Laravel</span><span class="tagpill">MySQL</span><span class="tagpill">REST APIs</span></div>
-      </div>
+      </a>
 
-      <div class="svc rv" data-num="02">
-        <div class="icon">◎</div>
+      <a class="svc-ref-card rv" href="#pricing" title="View Design & Branding Packages">
+        <div class="icon-box">◎</div>
         <h3>Design &amp; Branding</h3>
-        <p>Logos, identity systems, and interfaces that make your brand look as serious as it is.</p>
-        <ul>
-          <li>Logo &amp; full identity kits</li>
-          <li>Social media design systems</li>
-          <li>UI / UX for web and apps</li>
-          <li>Print-ready brand assets</li>
-        </ul>
-        <div class="tech"><span class="tagpill">Identity</span><span class="tagpill">UI / UX</span><span class="tagpill">Social kits</span></div>
-      </div>
+      </a>
 
-      <div class="svc rv" data-num="03">
-        <div class="icon">↗</div>
-        <h3>SEO</h3>
-        <p>Technical and on-page search optimization that puts you in front of people already looking for you.</p>
-        <ul>
-          <li>Technical audits &amp; fixes</li>
-          <li>Keyword &amp; content strategy</li>
-          <li>On-page optimization &amp; metadata</li>
-          <li>Local SEO &amp; business profiles</li>
-        </ul>
-        <div class="tech"><span class="tagpill">Audits</span><span class="tagpill">Content</span><span class="tagpill">Local SEO</span></div>
-      </div>
+      <a class="svc-ref-card rv" href="#pricing" title="View SEO Optimization Packages">
+        <div class="icon-box">↗</div>
+        <h3>SEO Optimization</h3>
+      </a>
 
-      <div class="svc rv" data-num="04">
-        <div class="icon">⚙</div>
-        <h3>Automation</h3>
-        <p>Scripts and workflows that remove repetitive work from your day and keep data moving on its own.</p>
-        <ul>
-          <li>Business process automations</li>
-          <li>Data collection &amp; reporting pipelines</li>
-          <li>Third-party API integrations</li>
-          <li>Scheduled jobs &amp; alerts</li>
-        </ul>
-        <div class="tech"><span class="tagpill">Python</span><span class="tagpill">APIs</span><span class="tagpill">Webhooks</span></div>
-      </div>
+      <a class="svc-ref-card rv" href="#pricing" title="View Business Automation Packages">
+        <div class="icon-box">⚙</div>
+        <h3>Business Automation</h3>
+      </a>
 
-      <div class="svc rv" data-num="05">
-        <div class="icon">☁</div>
+      <a class="svc-ref-card rv" href="#pricing" title="View SaaS Solutions Packages">
+        <div class="icon-box">☁</div>
         <h3>SaaS Solutions</h3>
-        <p>Scalable, multi-tenant cloud platforms built with secure authentication, subscription billing, and robust architecture.</p>
-        <ul>
-          <li>Multi-tenant architecture &amp; dashboard systems</li>
-          <li>Stripe &amp; subscription billing integration</li>
-          <li>Role-based access control &amp; security</li>
-          <li>Cloud deployment, CI/CD &amp; autoscaling</li>
-        </ul>
-        <div class="tech"><span class="tagpill">SaaS</span><span class="tagpill">Cloud</span><span class="tagpill">Docker</span><span class="tagpill">Stripe</span><span class="tagpill">PostgreSQL</span></div>
-      </div>
+      </a>
 
-      <div class="svc rv" data-num="06">
-        <div class="icon">📊</div>
+      <a class="svc-ref-card rv" href="#pricing" title="View Data Analytics Packages">
+        <div class="icon-box">📊</div>
         <h3>Data Analytics</h3>
-        <p>Transform raw operational numbers into actionable executive dashboards, KPIs, and real-time business intelligence.</p>
-        <ul>
-          <li>Interactive business intelligence dashboards</li>
-          <li>Customer behavior &amp; funnel analysis</li>
-          <li>KPI monitoring &amp; automated reporting</li>
-          <li>Predictive trend &amp; revenue analysis</li>
-        </ul>
-        <div class="tech"><span class="tagpill">Power BI</span><span class="tagpill">Tableau</span><span class="tagpill">SQL</span><span class="tagpill">Pandas</span><span class="tagpill">Dashboards</span></div>
-      </div>
+      </a>
 
-      <div class="svc rv" data-num="07">
-        <div class="icon">🤖</div>
+      <a class="svc-ref-card rv" href="#pricing" title="View AI & Machine Learning Packages">
+        <div class="icon-box">🤖</div>
         <h3>AI &amp; Machine Learning</h3>
-        <p>Custom artificial intelligence models, LLM integration, intelligent chatbots, and predictive algorithms that drive competitive advantage.</p>
-        <ul>
-          <li>Custom LLM integration &amp; AI agents</li>
-          <li>Intelligent automation &amp; AI chatbots</li>
-          <li>Classification, clustering &amp; recommendation systems</li>
-          <li>Model fine-tuning &amp; high-throughput inference APIs</li>
-        </ul>
-        <div class="tech"><span class="tagpill">PyTorch</span><span class="tagpill">TensorFlow</span><span class="tagpill">OpenAI API</span><span class="tagpill">NLP</span><span class="tagpill">Scikit-Learn</span></div>
-      </div>
+      </a>
 
-      <div class="svc rv" data-num="08">
-        <div class="icon">🗄</div>
+      <a class="svc-ref-card rv" href="#pricing" title="View Data Engineering Packages">
+        <div class="icon-box">🗄</div>
         <h3>Data Engineering</h3>
-        <p>Reliable ETL/ELT data pipelines, modern data warehousing, and infrastructure designed to handle high-velocity data securely.</p>
-        <ul>
-          <li>Automated ETL/ELT pipeline design</li>
-          <li>Data warehousing &amp; lakehouse architecture</li>
-          <li>Data cleaning, validation &amp; governance</li>
-          <li>Database optimization &amp; query acceleration</li>
-        </ul>
-        <div class="tech"><span class="tagpill">Apache Spark</span><span class="tagpill">Airflow</span><span class="tagpill">SQL</span><span class="tagpill">ETL</span><span class="tagpill">Kafka</span></div>
-      </div>
+      </a>
     </div>
   </div>
 </section>
+
+<!-- Section Divider: NEXDEV TEAMS -->
+<div class="brand-banner-strip banner-soft rv">
+  <h2 class="brand-banner-text">NEXDEV <span class="highlight">TEAMS</span></h2>
+</div>
 
 <section id="process">
   <div class="wrap">
@@ -2436,6 +2654,50 @@
   </div>
 </section>
 
+
+<!-- Testimonials Section (Clean Quote Card Reference Style) -->
+<section id="testimonials" class="testimonials-section">
+  <div class="wrap">
+    <div class="testi-quote-mark">“</div>
+    <div class="testi-carousel" id="testiCarousel">
+      <div class="testi-item active" data-index="0">
+        <p class="testi-quote">"Nexdev Vision transformed our digital presence completely. The new platform is blazing fast, user-friendly, and resulted in a 40% increase in inquiries within the first month. Incredible attention to detail!"</p>
+        <div class="testi-author">
+          <span class="author-name">David Sterling</span>
+          <span class="author-role">Founder &amp; Creative Director</span>
+          <span class="author-company">Caps Studio · UK</span>
+        </div>
+      </div>
+      <div class="testi-item" data-index="1">
+        <p class="testi-quote">"Finding a team that can execute both technical SEO architecture and a high-converting web interface was rare until we partnered with Nexdev Vision. Their communication and workflow are second to none."</p>
+        <div class="testi-author">
+          <span class="author-name">Dr. Rachel Evans</span>
+          <span class="author-role">Operations Head</span>
+          <span class="author-company">Thesis Writing Experts · London</span>
+        </div>
+      </div>
+      <div class="testi-item" data-index="2">
+        <p class="testi-quote">"They built our entire automated ordering and catalog pipeline on schedule and within budget. Professional, dependable, and always ready with smart solutions. Highly recommended!"</p>
+        <div class="testi-author">
+          <span class="author-name">Marcus Vance</span>
+          <span class="author-role">E-commerce Director</span>
+          <span class="author-company">Grocery Station One · USA</span>
+        </div>
+      </div>
+    </div>
+    <div class="testi-controls">
+      <button class="testi-dot active" data-slide="0" aria-label="Slide 1"></button>
+      <button class="testi-dot" data-slide="1" aria-label="Slide 2"></button>
+      <button class="testi-dot" data-slide="2" aria-label="Slide 3"></button>
+    </div>
+  </div>
+</section>
+
+<!-- Section Divider: NEXDEV IDEAS / #WEMAKEITRIGHT -->
+<div class="brand-banner-strip banner-dark rv">
+  <h2 class="brand-banner-text">#WEMAKEIT<span class="highlight">RIGHT</span></h2>
+</div>
+
 <section id="contact">
   <div class="wrap">
     <div class="sec-head rv">
@@ -2904,6 +3166,42 @@
       trailAlpha: 0.38
     });
   }
+
+  // Testimonial Carousel Auto & Manual Switcher
+  (function(){
+    var items = document.querySelectorAll('#testiCarousel .testi-item');
+    var dots = document.querySelectorAll('.testi-controls .testi-dot');
+    if(!items.length) return;
+    var current = 0;
+    var timer;
+
+    function showSlide(idx){
+      items.forEach(function(it, i){
+        it.classList.toggle('active', i === idx);
+      });
+      dots.forEach(function(d, i){
+        d.classList.toggle('active', i === idx);
+      });
+      current = idx;
+    }
+
+    dots.forEach(function(dot){
+      dot.addEventListener('click', function(){
+        clearInterval(timer);
+        showSlide(parseInt(this.dataset.slide, 10));
+        startAuto();
+      });
+    });
+
+    function startAuto(){
+      timer = setInterval(function(){
+        var next = (current + 1) % items.length;
+        showSlide(next);
+      }, 5500);
+    }
+    startAuto();
+  })();
+
 </script>
 </body>
 </html>
