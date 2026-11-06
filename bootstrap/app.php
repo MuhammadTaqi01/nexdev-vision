@@ -25,7 +25,14 @@ $app = new Illuminate\Foundation\Application(
 |
 */
 if (isset($_ENV['VERCEL']) || isset($_SERVER['VERCEL']) || getenv('VERCEL')) {
-    $app->useStoragePath('/tmp');
+    $storagePath = '/tmp/storage';
+    if (!is_dir($storagePath . '/framework/views')) {
+        @mkdir($storagePath . '/framework/views', 0777, true);
+        @mkdir($storagePath . '/framework/cache', 0777, true);
+        @mkdir($storagePath . '/framework/sessions', 0777, true);
+        @mkdir($storagePath . '/logs', 0777, true);
+    }
+    $app->useStoragePath($storagePath);
 }
 
 /*
