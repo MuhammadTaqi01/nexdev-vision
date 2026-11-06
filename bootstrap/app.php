@@ -21,11 +21,11 @@ $app = new Illuminate\Foundation\Application(
 |--------------------------------------------------------------------------
 |
 | On Vercel, the root filesystem is read-only except for /tmp.
-| When VERCEL environment is detected, we redirect storage to /tmp/storage.
+| When VERCEL environment is detected, we redirect storage to /tmp.
 |
 */
 if (isset($_ENV['VERCEL']) || isset($_SERVER['VERCEL']) || getenv('VERCEL')) {
-    $app->useStoragePath('/tmp/storage');
+    $app->useStoragePath('/tmp');
 }
 
 /*
