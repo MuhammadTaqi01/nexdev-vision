@@ -7,6 +7,4 @@ tests
 .phpunit.result.cache
 phpunit.xml
 README.md
-package.json
-package-lock.json
 webpack.mix.js
