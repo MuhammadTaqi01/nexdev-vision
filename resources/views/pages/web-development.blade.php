@@ -8,9 +8,11 @@
                     <p class="badge-pill"
                         style="background: rgba(255,255,255,0.1); color: #fff; border: 1px solid rgba(255,255,255,0.2);">
                         Web Development Services</p>
-                    <h1 class="service-hero-title" style="color: #fff;">Custom Web Development Solutions <span
-                            style="color: var(--primary);">That Grow Your
-                            Business</span></h1>
+                    <h1 class="service-hero-title" style="color: #fff;">Custom Web Development Solutions <br class="d-none d-md-inline">
+                        <span class="typing-container">
+                            <span class="typing-text text-gradient" data-words='["That Grow Your Business", "Built For Speed & SEO", "Secure & Scalable", "Tailored To Your Vision"]'>That Grow Your Business</span><span class="typing-cursor">|</span>
+                        </span>
+                    </h1>
                     <p class="service-hero-subtitle" style="color: #eee;">
                         We build fast, secure, and scalable websites and web applications that drive conversions and
                         support your business goals. From landing pages to complex platforms, our team delivers
@@ -111,48 +113,107 @@
             </div>
 
             <div class="row g-4 justify-content-center">
+                <!-- Project 1: CapsStudio -->
                 <div class="col-md-6 col-lg-4">
                     <a href="https://capsstudio.co.uk/" target="_blank" rel="noopener noreferrer"
-                        class="recent-project-card d-block text-decoration-none">
-                        <div class="recent-project-inner" style="background: #fff; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.06); transition: all 0.3s ease;">
-                            <div class="recent-project-icon mb-3">
-                                <img src="{{ asset('images/projects/capsstudio.png') }}" alt="CapsStudio" width="64" height="64"
-                                    style="border-radius: 12px; object-fit: contain;"
+                        class="recent-project-card d-block text-decoration-none h-100">
+                        <div class="recent-project-inner">
+                            <div class="recent-project-img-wrap">
+                                <img src="{{ asset('images/projects/work1.jpeg') }}" alt="CapsStudio"
+                                    class="recent-project-img"
                                     onerror="this.src='https://capsstudio.co.uk/favicon.ico'; this.onerror=null;">
                             </div>
-                            <h3 class="recent-project-title" style="color: var(--text-dark); font-size: 1.25rem; margin-bottom: 0.5rem;">CapsStudio</h3>
-                            <p class="recent-project-desc" style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">Personalised caps & custom headwear for men & women in the UK.</p>
-                            <span class="d-inline-flex align-items-center mt-3" style="color: var(--primary); font-weight: 600; font-size: 0.9rem;">Visit Site <i class="fas fa-external-link-alt ms-1"></i></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a href="https://grocerystationone.com/" target="_blank" rel="noopener noreferrer"
-                        class="recent-project-card d-block text-decoration-none">
-                        <div class="recent-project-inner" style="background: #fff; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.06); transition: all 0.3s ease;">
-                            <div class="recent-project-icon mb-3">
-                                <img src="{{ asset('images/projects/grocerystationone.png') }}" alt="Grocery Station One" width="64" height="64"
-                                    style="border-radius: 12px; object-fit: contain;"
-                                    onerror="this.src='https://grocerystationone.com/favicon.ico'; this.onerror=null;">
+                            <div class="recent-project-content">
+                                <h3 class="recent-project-title">CapsStudio</h3>
+                                <p class="recent-project-desc">A polished brand website for a UK-based studio designed and built end to end, from layout system to launch.</p>
+                                <span class="recent-project-cta">
+                                    Visit Live Site <i class="fas fa-external-link-alt ms-1"></i>
+                                </span>
                             </div>
-                            <h3 class="recent-project-title" style="color: var(--text-dark); font-size: 1.25rem; margin-bottom: 0.5rem;">Grocery Station One</h3>
-                            <p class="recent-project-desc" style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">Online grocery store with spices, dry fruits, tea, and food ingredients.</p>
-                            <span class="d-inline-flex align-items-center mt-3" style="color: var(--primary); font-weight: 600; font-size: 0.9rem;">Visit Site <i class="fas fa-external-link-alt ms-1"></i></span>
                         </div>
                     </a>
                 </div>
+
+                <!-- Project 2: Thesis Writing Experts -->
                 <div class="col-md-6 col-lg-4">
                     <a href="https://thesiswritingexperts.co.uk/" target="_blank" rel="noopener noreferrer"
-                        class="recent-project-card d-block text-decoration-none">
-                        <div class="recent-project-inner" style="background: #fff; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.06); transition: all 0.3s ease;">
-                            <div class="recent-project-icon mb-3">
-                                <img src="{{ asset('images/projects/thesiswritingexperts.png') }}" alt="Thesis Writing Experts" width="64" height="64"
-                                    style="border-radius: 12px; object-fit: contain;"
+                        class="recent-project-card d-block text-decoration-none h-100">
+                        <div class="recent-project-inner">
+                            <div class="recent-project-img-wrap">
+                                <img src="{{ asset('images/projects/work2.jpeg') }}" alt="Thesis Writing Experts"
+                                    class="recent-project-img"
                                     onerror="this.src='https://thesiswritingexperts.co.uk/favicon.ico'; this.onerror=null;">
                             </div>
-                            <h3 class="recent-project-title" style="color: var(--text-dark); font-size: 1.25rem; margin-bottom: 0.5rem;">Thesis Writing Experts</h3>
-                            <p class="recent-project-desc" style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">Professional thesis writing help in the UK & EU for students.</p>
-                            <span class="d-inline-flex align-items-center mt-3" style="color: var(--primary); font-weight: 600; font-size: 0.9rem;">Visit Site <i class="fas fa-external-link-alt ms-1"></i></span>
+                            <div class="recent-project-content">
+                                <h3 class="recent-project-title">Thesis Writing Experts</h3>
+                                <p class="recent-project-desc">An academic services platform built to rank structured content, clean markup, and search-first page architecture.</p>
+                                <span class="recent-project-cta">
+                                    Visit Live Site <i class="fas fa-external-link-alt ms-1"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Project 3: Grocery Station One -->
+                <div class="col-md-6 col-lg-4">
+                    <a href="https://grocerystationone.com/" target="_blank" rel="noopener noreferrer"
+                        class="recent-project-card d-block text-decoration-none h-100">
+                        <div class="recent-project-inner">
+                            <div class="recent-project-img-wrap">
+                                <img src="{{ asset('images/projects/work3.jpeg') }}" alt="Grocery Station One"
+                                    class="recent-project-img"
+                                    onerror="this.src='https://grocerystationone.com/favicon.ico'; this.onerror=null;">
+                            </div>
+                            <div class="recent-project-content">
+                                <h3 class="recent-project-title">Grocery Station One</h3>
+                                <p class="recent-project-desc">Online grocery store with spices, dry fruits, tea, and food ingredients.</p>
+                                <span class="recent-project-cta">
+                                    Visit Live Site <i class="fas fa-external-link-alt ms-1"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Project 4: Lusento Aroma -->
+                <div class="col-md-6 col-lg-4">
+                    <a href="https://www.lusentoaroma.com/" target="_blank" rel="noopener noreferrer"
+                        class="recent-project-card d-block text-decoration-none h-100">
+                        <div class="recent-project-inner">
+                            <div class="recent-project-img-wrap">
+                                <img src="{{ asset('images/projects/work4.jpeg') }}" alt="Lusento Aroma"
+                                    class="recent-project-img"
+                                    onerror="this.src='https://www.lusentoaroma.com/favicon.ico'; this.onerror=null;">
+                            </div>
+                            <div class="recent-project-content">
+                                <h3 class="recent-project-title">Lusento Aroma</h3>
+                                <p class="recent-project-desc">An online fragrance shopping experience with a polished storefront designed to showcase products and simplify browsing.</p>
+                                <span class="recent-project-cta">
+                                    Visit Live Site <i class="fas fa-external-link-alt ms-1"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Project 5: Hire a Book Marketer -->
+                <div class="col-md-6 col-lg-4">
+                    <a href="https://www.hireabookmarketer.com/" target="_blank" rel="noopener noreferrer"
+                        class="recent-project-card d-block text-decoration-none h-100">
+                        <div class="recent-project-inner">
+                            <div class="recent-project-img-wrap">
+                                <img src="{{ asset('images/projects/work5.jpeg') }}" alt="Hire a Book Marketer"
+                                    class="recent-project-img"
+                                    onerror="this.src='https://hireabookmarketer.com/favicon.ico'; this.onerror=null;">
+                            </div>
+                            <div class="recent-project-content">
+                                <h3 class="recent-project-title">Hire a Book Marketer</h3>
+                                <p class="recent-project-desc">A professional platform connecting authors with book marketing services, built to present offerings clearly and drive client inquiries.</p>
+                                <span class="recent-project-cta">
+                                    Visit Live Site <i class="fas fa-external-link-alt ms-1"></i>
+                                </span>
+                            </div>
                         </div>
                     </a>
                 </div>
@@ -419,7 +480,7 @@
                 </div>
                 <div class="final-cta-actions">
                     <a href="{{ route('quote') }}" class="btn btn-primary">Request a Quote</a>
-                    <a href="mailto:support@nexdevvision.com" class="btn btn-outline service-hero-secondary">Email Your
+                    <a href="mailto:nexdev.vision@gmail.com" class="btn btn-outline service-hero-secondary">Email Your
                         Brief</a>
                 </div>
             </div>

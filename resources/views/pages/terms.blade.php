@@ -75,8 +75,8 @@
 
                         <div class="mt-5 pt-4 border-top">
                             <p style="color: #555; font-size: 0.9rem;">If you have any questions about our Terms of
-                                Service, please contact us at <a href="mailto:support@nexdevvision.com"
-                                    style="color: var(--primary);">support@nexdevvision.com</a>.</p>
+                                Service, please contact us at <a href="mailto:nexdev.vision@gmail.com"
+                                    style="color: var(--primary);">nexdev.vision@gmail.com</a>.</p>
                         </div>
                     </div>
                 </div>

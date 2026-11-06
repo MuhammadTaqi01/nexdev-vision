@@ -34,10 +34,13 @@
                     <div class="sitemap-group">
                         <h3 class="sitemap-group-title">Our Services</h3>
                         <ul class="sitemap-list">
-                            <li><a href="{{ route('web.development') }}">Web Development</a></li>
-                            <li><a href="{{ route('graphic.design') }}">Graphic Design</a></li>
+                            <li><a href="{{ route('web.development') }}">Development</a></li>
+                            <li><a href="{{ route('graphic.design') }}">Design</a></li>
                             <li><a href="{{ route('digital.marketing') }}">Digital Marketing</a></li>
-                            <li><a href="{{ route('ms.office') }}">MS Office Solutions</a></li>
+                            <li><a href="{{ route('automation') }}">Automation</a></li>
+                            <li><a href="{{ route('saas') }}">SaaS</a></li>
+                            <li><a href="{{ route('data.analytics') }}">Data Analytics</a></li>
+                            <li><a href="{{ route('ai.engineering') }}">AI Engineering</a></li>
                         </ul>
                     </div>
                 </div>
@@ -48,6 +51,7 @@
                         <ul class="sitemap-list">
                             <li><a href="{{ route('terms') }}">Terms of Service</a></li>
                             <li><a href="{{ route('privacy') }}">Privacy Policy</a></li>
+                            <li><a href="{{ route('refund.policy') }}">Refund Policy</a></li>
                         </ul>
                     </div>
                 </div>

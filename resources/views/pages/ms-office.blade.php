@@ -8,9 +8,11 @@
                     <p class="badge-pill"
                         style="background: rgba(255,255,255,0.1); color: #fff; border: 1px solid rgba(255,255,255,0.2);">
                         MS Office Solutions</p>
-                    <h1 class="service-hero-title" style="color: #fff;">Smart MS Office Solutions for <span
-                            style="color: var(--primary);">Efficient Business
-                            Operations</span></h1>
+                    <h1 class="service-hero-title" style="color: #fff;">Smart MS Office Solutions for <br class="d-none d-md-inline">
+                        <span class="typing-container">
+                            <span class="typing-text text-gradient" data-words='["Efficient Business Operations", "Automated Excel Reports", "Pitch-Winning Presentations", "Custom Business Formulas"]'>Efficient Business Operations</span><span class="typing-cursor">|</span>
+                        </span>
+                    </h1>
                     <p class="service-hero-subtitle" style="color: #eee;">
                         We create data-driven campaigns that boost traffic, leads, and sales. By automating tasks and
                         streamlining insights, we help teams standardize documents, automate spreadsheets, and present
@@ -317,7 +319,7 @@
                 </div>
                 <div class="final-cta-actions">
                     <a href="{{ route('contactus') }}" class="btn btn-primary">Talk to Our Team</a>
-                    <a href="mailto:support@nexdevvision.com" class="btn btn-outline service-hero-secondary">Send Sample
+                    <a href="mailto:nexdev.vision@gmail.com" class="btn btn-outline service-hero-secondary">Send Sample
                         Files</a>
                 </div>
             </div>

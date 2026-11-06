@@ -7,12 +7,15 @@
         <div class="hero-overlay" style="position: absolute; inset: 0; background: rgba(0,0,0,0.6); z-index: 1;"></div>
         <div class="hero-content text-center"
             style="position: relative; z-index: 2; max-width: 900px; padding-top: 100px; margin: auto;">
-            <h1 style="font-size: 3rem; color: #fff; font-weight: 800; text-transform: uppercase;">
-                Building Digital Experiences <span style="color: var(--primary);">That Drive Growth</span>
+            <h1 style="font-size: 3.2rem; color: #fff; font-weight: 800; text-transform: uppercase; line-height: 1.25;">
+                Building Digital Experiences <br class="d-none d-md-inline">
+                <span class="typing-container">
+                    <span class="typing-text text-gradient" data-words='["That Drive Growth", "For Modern Brands", "Powered By AI", "Engineered To Scale", "That Deliver Results"]'>That Drive Growth</span><span class="typing-cursor">|</span>
+                </span>
             </h1>
             <p style="font-size: 1.2rem; color: #f1f1f1; font-weight: 500; line-height: 1.8; margin-bottom: 30px;">
-                We provide professional <strong>Web Development</strong>, <strong>Graphic Design</strong>,
-                <strong>Digital Marketing</strong>, and <strong>MS Office Solutions</strong> to help businesses
+                We provide professional <strong>Development</strong>, <strong>Design</strong>,
+                <strong>Digital Marketing</strong>, <strong>Automation</strong>, <strong>SaaS</strong>, <strong>Data Analytics</strong>, and <strong>AI Engineering</strong> to help businesses
                 stand out, scale faster, and succeed in the digital world.
             </p>
             <div class="hero-buttons mt-4" style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
@@ -53,86 +56,103 @@
         <div class="container">
 
             <div class="mb-5">
-                <p style="color: #ccc; margin-bottom: 5px;">What we are good at</p>
-                <h2 style="color: #fff; font-size: 2.5rem; text-transform: uppercase;">
+                <p style="color: var(--primary); text-transform: uppercase; font-weight: 700; letter-spacing: 1.5px; font-size: 0.85rem; margin-bottom: 8px;">What we are good at</p>
+                <h2 style="color: #fff; font-size: 2.5rem; text-transform: uppercase; font-weight: 800;">
                     Our Professional <span style="color: var(--primary);">Services</span>
                 </h2>
-                <p class="mt-3" style="color: #ccc; max-width: 800px;">
+                <p class="mt-3" style="color: #fff; max-width: 800px; font-size: 1.05rem; line-height: 1.7;">
                     We deliver end-to-end digital solutions tailored to your business needs.
-                    From building powerful websites to creating impactful designs and optimizing
-                    workflows, our services are designed to drive real growth.
+                    From building powerful websites to creating impactful designs, automations, and intelligent AI systems, our services are designed to drive real growth.
                 </p>
             </div>
 
-            <div
-                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 50px; text-align: center;">
-
-                <div>
-                    <div style="margin-bottom: 30px; font-size: 3rem; color: #fff;">
-                        <i class="fas fa-globe"></i>
-                    </div>
-                    <h3
-                        style="color: #fff; text-transform: uppercase; font-size: 1.2rem; letter-spacing: 1px; margin-bottom: 15px;">
-                        Digital Marketing Services
-                    </h3>
-                    <p style="color: #ccc; line-height: 1.7;">
-                        We help businesses grow their online presence through strategic SEO,
-                        social media management, and content marketing. Our data-driven
-                        approach focuses on visibility, engagement, and measurable results.
-                    </p>
+            <!-- Row 1: 4 Services -->
+            <div class="row g-4 mb-4">
+                <!-- 1. Development -->
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <a href="{{ route('web.development') }}" class="svc-showcase-card">
+                        <div class="svc-icon-wrapper">
+                            <img src="/images/web.webp" alt="Development" class="svc-icon-graphic" onerror="this.outerHTML='<i class=\'fas fa-code fa-3x text-white\'></i>'">
+                        </div>
+                        <h3 class="svc-showcase-title">Development</h3>
+                        <p class="svc-showcase-subtitle">Web & Custom Platforms</p>
+                    </a>
                 </div>
 
-                <div>
-                    <div style="margin-bottom: 30px; font-size: 3rem; color: #fff;">
-                        <i class="fas fa-paint-brush"></i>
-                    </div>
-                    <h3
-                        style="color: #fff; text-transform: uppercase; font-size: 1.2rem; letter-spacing: 1px; margin-bottom: 15px;">
-                        Graphic Design Services
-                    </h3>
-                    <p style="color: #ccc; line-height: 1.7;">
-                        Our creative team designs visually compelling brand identities,
-                        logos, and marketing materials that communicate your message
-                        clearly and leave a lasting impression on your audience.
-                    </p>
+                <!-- 2. Design -->
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <a href="{{ route('graphic.design') }}" class="svc-showcase-card">
+                        <div class="svc-icon-wrapper">
+                            <img src="/images/designing.webp" alt="Design" class="svc-icon-graphic" onerror="this.outerHTML='<i class=\'fas fa-palette fa-3x text-white\'></i>'">
+                        </div>
+                        <h3 class="svc-showcase-title">Design</h3>
+                        <p class="svc-showcase-subtitle">Brand Identity & UI/UX</p>
+                    </a>
                 </div>
 
-                <div>
-                    <div style="margin-bottom: 30px; font-size: 3rem; color: #fff;">
-                        <i class="fas fa-desktop"></i>
-                    </div>
-                    <h3
-                        style="color: #fff; text-transform: uppercase; font-size: 1.2rem; letter-spacing: 1px; margin-bottom: 15px;">
-                        Web Development Services
-                    </h3>
-                    <p style="color: #ccc; line-height: 1.7;">
-                        We build fast, secure, and scalable websites tailored to your business goals.
-                        From corporate websites to eCommerce platforms, our solutions focus on
-                        performance, usability, and modern design.
-                    </p>
+                <!-- 3. Digital Marketing -->
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <a href="{{ route('digital.marketing') }}" class="svc-showcase-card">
+                        <div class="svc-icon-wrapper">
+                            <img src="/images/digital-marketing.webp" alt="Digital Marketing" class="svc-icon-graphic" onerror="this.outerHTML='<i class=\'fas fa-bullhorn fa-3x text-white\'></i>'">
+                        </div>
+                        <h3 class="svc-showcase-title">Digital Marketing</h3>
+                        <p class="svc-showcase-subtitle">SEO & Paid Advertising</p>
+                    </a>
                 </div>
 
-                <div>
-                    <div style="margin-bottom: 30px; font-size: 3rem; color: #fff;">
-                        <i class="fas fa-file-excel"></i>
-                    </div>
-                    <h3
-                        style="color: #fff; text-transform: uppercase; font-size: 1.2rem; letter-spacing: 1px; margin-bottom: 15px;">
-                        MS Office Solutions
-                    </h3>
-                    <p style="color: #ccc; line-height: 1.7;">
-                        We provide professional MS Office solutions including Excel automation,
-                        PowerPoint presentations, and Word documentation to streamline
-                        business operations and improve productivity.
-                    </p>
+                <!-- 4. Automation -->
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <a href="{{ route('automation') }}" class="svc-showcase-card">
+                        <div class="svc-icon-wrapper">
+                            <img src="/images/automation.webp" alt="Automation" class="svc-icon-graphic" onerror="this.outerHTML='<i class=\'fas fa-cogs fa-3x text-white\'></i>'">
+                        </div>
+                        <h3 class="svc-showcase-title">Automation</h3>
+                        <p class="svc-showcase-subtitle">Workflow & RPA Bots</p>
+                    </a>
                 </div>
-
             </div>
 
-            <div class="text-center mt-5">
-                <a href="#services" class="btn"
-                    style="background: var(--primary); color: #fff; padding: 12px 30px; font-weight: 700; border-radius: 4px;">
-                    Explore Our Services
+            <!-- Row 2: 3 Services (Centered) -->
+            <div class="row g-4 justify-content-center">
+                <!-- 5. SaaS Solutions -->
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                    <a href="{{ route('saas') }}" class="svc-showcase-card">
+                        <div class="svc-icon-wrapper">
+                            <img src="/images/saas.webp" alt="SaaS Solutions" class="svc-icon-graphic" onerror="this.outerHTML='<i class=\'fas fa-cloud fa-3x text-white\'></i>'">
+                        </div>
+                        <h3 class="svc-showcase-title">SaaS Solutions</h3>
+                        <p class="svc-showcase-subtitle">Cloud Platforms & Subscriptions</p>
+                    </a>
+                </div>
+
+                <!-- 6. Data Analytics -->
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                    <a href="{{ route('data.analytics') }}" class="svc-showcase-card">
+                        <div class="svc-icon-wrapper">
+                            <img src="/images/data-analytics.webp" alt="Data Analytics" class="svc-icon-graphic" onerror="this.outerHTML='<i class=\'fas fa-chart-line fa-3x text-white\'></i>'">
+                        </div>
+                        <h3 class="svc-showcase-title">Data Analytics</h3>
+                        <p class="svc-showcase-subtitle">BI Dashboards & Pipelines</p>
+                    </a>
+                </div>
+
+                <!-- 7. AI Engineering -->
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                    <a href="{{ route('ai.engineering') }}" class="svc-showcase-card">
+                        <div class="svc-icon-wrapper">
+                            <img src="/images/ai-engineering.webp" alt="AI Engineering" class="svc-icon-graphic" onerror="this.outerHTML='<i class=\'fas fa-brain fa-3x text-white\'></i>'">
+                        </div>
+                        <h3 class="svc-showcase-title">AI Engineering</h3>
+                        <p class="svc-showcase-subtitle">AI Agents & Custom Models</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="text-center mt-5 pt-3">
+                <a href="{{ route('pricing') }}" class="btn btn-primary"
+                    style="padding: 12px 32px; font-weight: 700; border-radius: 6px;">
+                    Explore All Services & Pricing <i class="fas fa-arrow-right ms-2"></i>
                 </a>
             </div>
 
@@ -150,19 +170,19 @@
 
             <div class="facts-grid">
                 <div class="fact-card stat-item">
-                    <h2 class="fact-value" data-count="1000">0</h2>
+                    <h2 class="fact-value" data-count="200">0</h2>
                     <p class="fact-label">Projects Delivered</p>
                 </div>
                 <div class="fact-card stat-item">
-                    <h2 class="fact-value" data-count="50000">0</h2>
+                    <h2 class="fact-value" data-count="1000">0</h2>
                     <p class="fact-label">Keywords Ranked</p>
                 </div>
                 <div class="fact-card stat-item">
-                    <h2 class="fact-value" data-count="13">0</h2>
+                    <h2 class="fact-value" data-count="2">0</h2>
                     <p class="fact-label">Years of Experience</p>
                 </div>
                 <div class="fact-card stat-item">
-                    <h2 class="fact-value" data-count="400">0</h2>
+                    <h2 class="fact-value" data-count="50">0</h2>
                     <p class="fact-label">Websites Delivered</p>
                 </div>
             </div>

@@ -37,7 +37,7 @@
                                 </div>
                                 <div>
                                     <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 5px;">Our Office</h4>
-                                    <p style="color: #666; margin: 0;">Karachi, Pakistan</p>
+                                    <p style="color: #666; margin: 0;">1709 East 900 South, Salt Lake City, UT 84105, United State</p>
                                 </div>
                             </div>
 
@@ -48,7 +48,7 @@
                                 </div>
                                 <div>
                                     <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 5px;">Call Us</h4>
-                                    <p style="color: #666; margin: 0;">+92-310-2166745</p>
+                                    <p style="color: #666; margin: 0;">+1 (801) 317-8525</p>
                                 </div>
                             </div>
 
@@ -59,7 +59,7 @@
                                 </div>
                                 <div>
                                     <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 5px;">Email Us</h4>
-                                    <p style="color: #666; margin: 0;">support@nexdevvision.com</p>
+                                    <p style="color: #666; margin: 0;">nexdev.vision@gmail.com</p>
                                 </div>
                             </div>
 
@@ -87,6 +87,11 @@
                         @if(session('success'))
                             <div class="alert alert-success mt-3">
                                 {{ session('success') }}
+                            </div>
+                        @endif
+                        @if(session('error'))
+                            <div class="alert alert-danger mt-3">
+                                {{ session('error') }}
                             </div>
                         @endif
                         <form action="{{ route('contactus.submit') }}" method="POST" id="contactForm">

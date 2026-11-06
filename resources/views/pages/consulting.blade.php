@@ -164,10 +164,13 @@
                                         <select name="service" class="form-select" required
                                             style="padding: 12px; border-radius: 8px; border: 1px solid #ddd;">
                                             <option value="" disabled selected>Select a service</option>
-                                            <option value="web-development">Web Development</option>
-                                            <option value="graphic-design">Graphic Design</option>
+                                            <option value="development">Development</option>
+                                            <option value="design">Design</option>
                                             <option value="digital-marketing">Digital Marketing</option>
-                                            <option value="ms-office-solution">MS Office Solution</option>
+                                            <option value="automation">Automation</option>
+                                            <option value="saas">SaaS</option>
+                                            <option value="data-analytics">Data Analytics</option>
+                                            <option value="ai-engineering">AI Engineering</option>
                                             <option value="other">Other</option>
                                         </select>
                                     </div>

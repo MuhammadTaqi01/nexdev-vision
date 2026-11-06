@@ -17,6 +17,19 @@ $app = new Illuminate\Foundation\Application(
 
 /*
 |--------------------------------------------------------------------------
+| Setup Storage Path for Serverless Environments (Vercel)
+|--------------------------------------------------------------------------
+|
+| On Vercel, the root filesystem is read-only except for /tmp.
+| When VERCEL environment is detected, we redirect storage to /tmp/storage.
+|
+*/
+if (isset($_ENV['VERCEL']) || isset($_SERVER['VERCEL']) || getenv('VERCEL')) {
+    $app->useStoragePath('/tmp/storage');
+}
+
+/*
+|--------------------------------------------------------------------------
 | Bind Important Interfaces
 |--------------------------------------------------------------------------
 |

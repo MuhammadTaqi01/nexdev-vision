@@ -9,9 +9,11 @@
                     <p class="badge-pill"
                         style="background: rgba(255,255,255,0.1); color: #fff; border: 1px solid rgba(255,255,255,0.2);">
                         Digital Marketing Services</p>
-                    <h1 class="service-hero-title" style="color: #fff;">Grow Your Business with Smart <span
-                            style="color: var(--primary);">Digital Marketing
-                            Strategies</span></h1>
+                    <h1 class="service-hero-title" style="color: #fff;">Grow Your Business with Smart <br class="d-none d-md-inline">
+                        <span class="typing-container">
+                            <span class="typing-text text-gradient" data-words='["Digital Marketing Strategies", "Data-Driven SEO Growth", "Targeted Social Campaigns", "High-Converting Funnels"]'>Digital Marketing Strategies</span><span class="typing-cursor">|</span>
+                        </span>
+                    </h1>
                     <p class="service-hero-subtitle" style="color: #eee;">
                         We plan, launch, and optimize data-driven campaigns that bring you more traffic, qualified
                         leads, and consistent sales—not just clicks. We leverage advanced analytics and tailored
@@ -346,7 +348,7 @@
                 </div>
                 <div class="final-cta-actions">
                     <a href="{{ route('contactus') }}" class="btn btn-primary">Schedule Free Consultation</a>
-                    <a href="mailto:support@nexdevvision.com" class="btn btn-outline service-hero-secondary">Send Us
+                    <a href="mailto:nexdev.vision@gmail.com" class="btn btn-outline service-hero-secondary">Send Us
                         Your
                         Brief</a>
                 </div>

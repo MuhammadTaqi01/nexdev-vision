@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Artesaos\SEOTools\Facades\SEOMeta;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Log;
 use App\Mail\ContactMail;
 use App\Mail\FeedbackMail;
 use App\Mail\QuoteMail;
@@ -133,6 +134,36 @@ class PageController extends Controller
             'features' => ['Custom Graphics', 'Infographics', 'Animations', 'Storytelling'],
             'icon' => 'fa-file-powerpoint'
         ],
+
+        // Automation, SaaS, Data Analytics & AI
+        'automation' => [
+            'title' => 'Automation Solutions',
+            'subtitle' => 'Streamline workflows, automate manual operations, and boost efficiency.',
+            'description' => 'Eliminate repetitive tasks and optimize business operations with intelligent workflow automation, robotic process automation (RPA), and seamless API integrations.',
+            'features' => ['Workflow Automation', 'API & Webhook Integrations', 'RPA & Smart Bots', 'Data Sync & Process Optimization'],
+            'icon' => 'fa-cogs'
+        ],
+        'saas' => [
+            'title' => 'SaaS Development',
+            'subtitle' => 'Scalable, multi-tenant cloud software tailored for high growth.',
+            'description' => 'We design, build, and deploy robust Software-as-a-Service (SaaS) platforms with multi-tenant architecture, automated subscription billing, role-based access, and enterprise scalability.',
+            'features' => ['Multi-Tenant Architecture', 'Stripe & Payment Gateways', 'Subscription Billing Engine', 'Cloud & DevOps Setup'],
+            'icon' => 'fa-cloud'
+        ],
+        'data-analytics' => [
+            'title' => 'Data Analytics & BI',
+            'subtitle' => 'Turn raw data into actionable business intelligence and dashboards.',
+            'description' => 'Empower your decision-making with custom business intelligence dashboards, real-time analytics pipelines, automated reporting, and predictive modeling.',
+            'features' => ['Interactive BI Dashboards', 'Data Warehousing & ETL', 'Performance Tracking', 'Predictive Modeling'],
+            'icon' => 'fa-chart-line'
+        ],
+        'ai-engineering' => [
+            'title' => 'AI Engineering',
+            'subtitle' => 'Autonomous AI agents, LLM integrations, and custom machine learning.',
+            'description' => 'Harness the power of Artificial Intelligence to automate complex decisions, build custom AI agents, fine-tune modern LLMs, and deploy intelligent business solutions.',
+            'features' => ['Custom AI Agents & Chatbots', 'LLM Integration (GPT, Gemini)', 'Predictive Machine Learning', 'Computer Vision & NLP Solutions'],
+            'icon' => 'fa-brain'
+        ],
     ];
     public function index()
     {
@@ -213,6 +244,42 @@ class PageController extends Controller
         SEOMeta::addMeta('robots', 'index,follow');
 
         return view('pages.ms-office');
+    }
+
+    public function saas()
+    {
+        SEOMeta::setTitle('Nexdev Vision | SaaS Development & Cloud Solutions');
+        SEOMeta::setDescription('Scalable multi-tenant SaaS software engineering with automated recurring billing, robust authentication, and high-performance cloud architecture.');
+        SEOMeta::addMeta('robots', 'index,follow');
+
+        return view('pages.saas');
+    }
+
+    public function automation()
+    {
+        SEOMeta::setTitle('Nexdev Vision | Enterprise Workflow Automation');
+        SEOMeta::setDescription('Intelligent business workflow automation, custom bots, RPA, and API integrations that eliminate repetitive work and boost efficiency.');
+        SEOMeta::addMeta('robots', 'index,follow');
+
+        return view('pages.automation');
+    }
+
+    public function dataAnalytics()
+    {
+        SEOMeta::setTitle('Nexdev Vision | Data Analytics & Business Intelligence');
+        SEOMeta::setDescription('Transform complex raw data into actionable revenue growth with custom BI dashboards, automated ETL pipelines, and predictive reporting.');
+        SEOMeta::addMeta('robots', 'index,follow');
+
+        return view('pages.data-analytics');
+    }
+
+    public function aiEngineering()
+    {
+        SEOMeta::setTitle('Nexdev Vision | AI Engineering & Machine Learning');
+        SEOMeta::setDescription('Custom AI agents, LLM integrations, RAG architecture, and deep machine learning solutions built for high-impact real-world applications.');
+        SEOMeta::addMeta('robots', 'index,follow');
+
+        return view('pages.ai-engineering');
     }
 
     public function service($slug)
@@ -370,6 +437,15 @@ class PageController extends Controller
         return view('pages.privacy');
     }
 
+    public function refundPolicy()
+    {
+        SEOMeta::setTitle('Refund Policy | Nexdev Vision');
+        SEOMeta::setDescription('Read Nexdev Vision\'s Refund Policy to understand our commitment, satisfaction guarantees, milestones, and cancellation terms.');
+        SEOMeta::addMeta('robots', 'index,follow');
+
+        return view('pages.refund-policy');
+    }
+
     public function handleContact(Request $request)
     {
         $data = $request->validate([
@@ -380,9 +456,13 @@ class PageController extends Controller
             'message' => 'required|string',
         ]);
 
-        Mail::to('nexdev.vision@gmail.com')->send(new ContactMail($data));
-
-        return back()->with('success', 'Your message has been sent successfully!');
+        try {
+            Mail::to('nexdev.vision@gmail.com')->send(new ContactMail($data));
+            return back()->with('success', 'Your message has been sent successfully!');
+        } catch (\Exception $e) {
+            Log::error('Contact email error: ' . $e->getMessage());
+            return back()->with('error', 'Unable to send message via mail server at this moment. Please email us directly at nexdev.vision@gmail.com');
+        }
     }
 
     public function handleQuote(Request $request)
@@ -398,9 +478,13 @@ class PageController extends Controller
             'description' => 'required|string',
         ]);
 
-        Mail::to('nexdev.vision@gmail.com')->send(new QuoteMail($data));
-
-        return back()->with('success', 'Your quote request has been submitted successfully!');
+        try {
+            Mail::to('nexdev.vision@gmail.com')->send(new QuoteMail($data));
+            return back()->with('success', 'Your quote request has been submitted successfully!');
+        } catch (\Exception $e) {
+            Log::error('Quote email error: ' . $e->getMessage());
+            return back()->with('error', 'Unable to send quote request. Please email us directly at nexdev.vision@gmail.com');
+        }
     }
 
     public function handleFeedback(Request $request)
@@ -417,9 +501,13 @@ class PageController extends Controller
             'comments' => 'nullable|string',
         ]);
 
-        Mail::to('nexdev.vision@gmail.com')->send(new FeedbackMail($data));
-
-        return back()->with('success', 'Thank you for your feedback!');
+        try {
+            Mail::to('nexdev.vision@gmail.com')->send(new FeedbackMail($data));
+            return back()->with('success', 'Thank you for your feedback!');
+        } catch (\Exception $e) {
+            Log::error('Feedback email error: ' . $e->getMessage());
+            return back()->with('error', 'Unable to submit feedback. Please email us directly at nexdev.vision@gmail.com');
+        }
     }
 
     public function handleConsulting(Request $request)
@@ -433,9 +521,13 @@ class PageController extends Controller
             'message' => 'required|string',
         ]);
 
-        Mail::to('nexdev.vision@gmail.com')->send(new ConsultingMail($data));
-
-        return back()->with('success', 'Your consulting request has been submitted successfully!');
+        try {
+            Mail::to('nexdev.vision@gmail.com')->send(new ConsultingMail($data));
+            return back()->with('success', 'Your consulting request has been submitted successfully!');
+        } catch (\Exception $e) {
+            Log::error('Consulting email error: ' . $e->getMessage());
+            return back()->with('error', 'Unable to submit consulting request. Please email us directly at nexdev.vision@gmail.com');
+        }
     }
 }
 
