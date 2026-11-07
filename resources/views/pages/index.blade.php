@@ -7,7 +7,7 @@
         <div class="hero-overlay" style="position: absolute; inset: 0; background: rgba(0,0,0,0.6); z-index: 1;"></div>
         <div class="hero-content text-center"
             style="position: relative; z-index: 2; max-width: 900px; padding-top: 100px; margin: auto;">
-            <h1 style="font-size: 3.2rem; color: #fff; font-weight: 800; text-transform: uppercase; line-height: 1.25;">
+            <h1 class="hero-main-title" style="color: #fff; font-weight: 800; text-transform: uppercase;">
                 Building Digital Experiences <br class="d-none d-md-inline">
                 <span class="typing-container">
                     <span class="typing-text text-gradient" data-words='["That Drive Growth", "For Modern Brands", "Powered By AI", "Engineered To Scale", "That Deliver Results"]'>That Drive Growth</span><span class="typing-cursor">|</span>
@@ -205,49 +205,49 @@
             <div class="industries-grid mt-4">
                 <div class="industry-card">
                     <div class="industry-image-wrapper square">
-                        <img src="/images/fashion.jpg" alt="Fashion">
+                        <img src="/images/fashion.jpg" alt="Fashion" loading="lazy" decoding="async">
                     </div>
                     <h4 class="industry-name">FASHION</h4>
                 </div>
                 <div class="industry-card">
                     <div class="industry-image-wrapper square">
-                        <img src="/images/food.jpg" alt="Food">
+                        <img src="/images/food.jpg" alt="Food" loading="lazy" decoding="async">
                     </div>
                     <h4 class="industry-name">FOOD</h4>
                 </div>
                 <div class="industry-card">
                     <div class="industry-image-wrapper square">
-                        <img src="/images/retail.jpg" alt="Retail">
+                        <img src="/images/retail.jpg" alt="Retail" loading="lazy" decoding="async">
                     </div>
                     <h4 class="industry-name">RETAIL</h4>
                 </div>
                 <div class="industry-card">
                     <div class="industry-image-wrapper square">
-                        <img src="/images/technology.jpg" alt="Technology">
+                        <img src="/images/technology.jpg" alt="Technology" loading="lazy" decoding="async">
                     </div>
                     <h4 class="industry-name">TECHNOLOGY</h4>
                 </div>
                 <div class="industry-card">
                     <div class="industry-image-wrapper square">
-                        <img src="/images/startups.jpg" alt="Startups">
+                        <img src="/images/startups.jpg" alt="Startups" loading="lazy" decoding="async">
                     </div>
                     <h4 class="industry-name">STARTUPS</h4>
                 </div>
                 <div class="industry-card">
                     <div class="industry-image-wrapper square">
-                        <img src="/images/health.jpg" alt="Healthcare">
+                        <img src="/images/health.jpg" alt="Healthcare" loading="lazy" decoding="async">
                     </div>
                     <h4 class="industry-name">HEALTHCARE</h4>
                 </div>
                 <div class="industry-card">
                     <div class="industry-image-wrapper square">
-                        <img src="/images/hospitality.jpg" alt="Hospitality">
+                        <img src="/images/hospitality.jpg" alt="Hospitality" loading="lazy" decoding="async">
                     </div>
                     <h4 class="industry-name">HOSPITALITY</h4>
                 </div>
                 <div class="industry-card">
                     <div class="industry-image-wrapper square">
-                        <img src="/images/education.jpg" alt="Education">
+                        <img src="/images/education.jpg" alt="Education" loading="lazy" decoding="async">
                     </div>
                     <h4 class="industry-name">EDUCATION</h4>
                 </div>

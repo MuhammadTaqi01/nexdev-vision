@@ -9,13 +9,13 @@ return [
          * The default configurations to be used by the meta generator.
          */
         'defaults'       => [
-            'title'        => "It's Over 9000!", // set false to total remove
-            'titleBefore'  => false, // Put defaults.title before page title, like 'It's Over 9000! - Dashboard'
-            'description'  => 'For those who helped create the Genki Dama', // set false to total remove
-            'separator'    => ' - ',
-            'keywords'     => [],
-            'canonical'    => false, // Set to null or 'full' to use Url::full(), set to 'current' to use Url::current(), set false to total remove
-            'robots'       => false, // Set to 'all', 'none' or any combination of index/noindex and follow/nofollow
+            'title'        => "Nexdev Vision | Custom Web Development, UI/UX Design & AI Solutions",
+            'titleBefore'  => false,
+            'description'  => "Nexdev Vision is a premier digital agency providing custom web development, brand identity design, SEO digital marketing, business automation, and AI solutions to scale modern brands globally.",
+            'separator'    => ' | ',
+            'keywords'     => ['Custom Web Development', 'UI/UX Design Agency', 'Digital Marketing Services', 'SEO Agency', 'Business Automation', 'AI Engineering', 'SaaS Development', 'Nexdev Vision'],
+            'canonical'    => 'current',
+            'robots'       => 'index,follow',
         ],
         /*
          * Webmaster tags are always added.
@@ -36,12 +36,12 @@ return [
          * The default configurations to be used by the opengraph generator.
          */
         'defaults' => [
-            'title'       => 'Over 9000 Thousand!', // set false to total remove
-            'description' => 'For those who helped create the Genki Dama', // set false to total remove
-            'url'         => false, // Set null for using Url::current(), set false to total remove
-            'type'        => false,
-            'site_name'   => false,
-            'images'      => [],
+            'title'       => 'Nexdev Vision | Digital Experiences That Drive Growth',
+            'description' => 'Nexdev Vision provides custom web development, brand identity design, digital marketing, and AI engineering for modern businesses.',
+            'url'         => false,
+            'type'        => 'website',
+            'site_name'   => 'Nexdev Vision',
+            'images'      => ['/images/logo.png'],
         ],
     ],
     'twitter' => [
@@ -49,8 +49,8 @@ return [
          * The default values to be used by the twitter cards generator.
          */
         'defaults' => [
-            //'card'        => 'summary',
-            //'site'        => '@LuizVinicius73',
+            'card'        => 'summary_large_image',
+            'site'        => '@nexdevvision',
         ],
     ],
     'json-ld' => [
@@ -58,11 +58,11 @@ return [
          * The default configurations to be used by the json-ld generator.
          */
         'defaults' => [
-            'title'       => 'Over 9000 Thousand!', // set false to total remove
-            'description' => 'For those who helped create the Genki Dama', // set false to total remove
-            'url'         => false, // Set to null or 'full' to use Url::full(), set to 'current' to use Url::current(), set false to total remove
+            'title'       => 'Nexdev Vision | Digital Experiences That Drive Growth',
+            'description' => 'Nexdev Vision provides custom web development, brand identity design, digital marketing, and AI engineering for modern businesses.',
+            'url'         => false,
             'type'        => 'WebPage',
-            'images'      => [],
+            'images'      => ['/images/logo.png'],
         ],
     ],
 ];

@@ -73,14 +73,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         let wordIndex = 0;
-        let charIndex = 0;
-        let isDeleting = false;
-        const typeSpeed = 90;
-        const deleteSpeed = 45;
-        const pauseDelay = 2000;
+        let charIndex = words[0].length;
+        let isDeleting = true;
+        const typeSpeed = 75;
+        const deleteSpeed = 35;
+        const pauseDelay = 2200;
 
-        // Initialize empty text to start typing cleanly
-        el.textContent = '';
+        // Ensure initial word is populated cleanly
+        el.textContent = words[0];
 
         function type() {
             const currentWord = words[wordIndex];
@@ -101,13 +101,13 @@ document.addEventListener('DOMContentLoaded', () => {
             } else if (isDeleting && charIndex === 0) {
                 isDeleting = false;
                 wordIndex = (wordIndex + 1) % words.length;
-                currentDelay = 400;
+                currentDelay = 350;
             }
 
             setTimeout(type, currentDelay);
         }
 
-        // Slight initial delay before typing starts
-        setTimeout(type, 600);
+        // Wait a comfortable moment before cycling to the next word
+        setTimeout(type, 1800);
     });
 });

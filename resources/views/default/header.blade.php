@@ -1,8 +1,8 @@
 <header>
     <div class="container">
         <a href="{{ route('nvlanding') }}" class="logo"
-            style="display: flex; justify-content: center; align-items: center;">
-            <img src="/images/logo.png" alt="Nexdev Vision">
+            style="display: flex; justify-content: center; align-items: center; text-decoration: none;">
+            <img src="/images/logo.png" alt="Nexdev Vision" class="header-logo-img">
         </a>
 
         <button class="menu-toggle" aria-label="Toggle navigation">
@@ -35,6 +35,27 @@
 </header>
 
 <style>
+    /* Header Logo Styling */
+    .header-logo-img {
+        height: 48px;
+        width: auto;
+        max-width: 200px;
+        object-fit: contain;
+        display: block;
+        transition: transform 0.25s ease;
+    }
+
+    .logo:hover .header-logo-img {
+        transform: scale(1.03);
+    }
+
+    @media (max-width: 768px) {
+        .header-logo-img {
+            height: 38px;
+            max-width: 160px;
+        }
+    }
+
     /* Navigation & Dropdown Styling */
     .main-nav ul {
         margin: 0;

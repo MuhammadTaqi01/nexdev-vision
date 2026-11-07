@@ -262,10 +262,10 @@
             <div class="row g-4 justify-content-center" id="design-portfolio-grid">
                 <!-- Logo Design: Modern Minimal Logo -->
                 <div class="col-xl-4 col-lg-4 col-md-6 gd-portfolio-item" data-category="logos" data-in-all="true">
-                    <div class="gd-portfolio-card" data-src="/images/portfolios/logo1.jpeg" data-caption="Modern Minimal Logo">
+                    <div class="gd-portfolio-card" data-src="/images/portfolios/logo1.jpg" data-caption="Modern Minimal Logo">
                         <div class="gd-portfolio-img-box">
                             <span class="gd-portfolio-badge">Logo Design</span>
-                            <img src="/images/portfolios/logo1.jpeg" alt="Modern Minimal Logo" loading="lazy">
+                            <img src="/images/portfolios/logo1.jpg" alt="Modern Minimal Logo" loading="lazy">
                             <div class="gd-portfolio-overlay">
                                 <div class="gd-portfolio-zoom-btn">
                                     <i class="fas fa-search-plus"></i>
@@ -277,10 +277,10 @@
 
                 <!-- Logo Design: Brand Identity Mark -->
                 <div class="col-xl-4 col-lg-4 col-md-6 gd-portfolio-item" data-category="logos" data-in-all="true">
-                    <div class="gd-portfolio-card" data-src="/images/portfolios/logo2.jpeg" data-caption="Brand Identity Mark">
+                    <div class="gd-portfolio-card" data-src="/images/portfolios/logo2.jpg" data-caption="Brand Identity Mark">
                         <div class="gd-portfolio-img-box">
                             <span class="gd-portfolio-badge">Logo Design</span>
-                            <img src="/images/portfolios/logo2.jpeg" alt="Brand Identity Mark" loading="lazy">
+                            <img src="/images/portfolios/logo2.jpg" alt="Brand Identity Mark" loading="lazy">
                             <div class="gd-portfolio-overlay">
                                 <div class="gd-portfolio-zoom-btn">
                                     <i class="fas fa-search-plus"></i>
@@ -292,10 +292,10 @@
 
                 <!-- Logo Design: Typography Monogram -->
                 <div class="col-xl-4 col-lg-4 col-md-6 gd-portfolio-item" data-category="logos" data-in-all="true">
-                    <div class="gd-portfolio-card" data-src="/images/portfolios/logo3.jpeg" data-caption="Typography Monogram">
+                    <div class="gd-portfolio-card" data-src="/images/portfolios/logo3.jpg" data-caption="Typography Monogram">
                         <div class="gd-portfolio-img-box">
                             <span class="gd-portfolio-badge">Logo Design</span>
-                            <img src="/images/portfolios/logo3.jpeg" alt="Typography Monogram" loading="lazy">
+                            <img src="/images/portfolios/logo3.jpg" alt="Typography Monogram" loading="lazy">
                             <div class="gd-portfolio-overlay">
                                 <div class="gd-portfolio-zoom-btn">
                                     <i class="fas fa-search-plus"></i>
@@ -307,10 +307,10 @@
 
                 <!-- Logo Design: Creative Vector Emblem -->
                 <div class="col-xl-4 col-lg-4 col-md-6 gd-portfolio-item" data-category="logos" data-in-all="false" style="display: none;">
-                    <div class="gd-portfolio-card" data-src="/images/portfolios/logo4.jpeg" data-caption="Creative Vector Emblem">
+                    <div class="gd-portfolio-card" data-src="/images/portfolios/logo4.jpg" data-caption="Creative Vector Emblem">
                         <div class="gd-portfolio-img-box">
                             <span class="gd-portfolio-badge">Logo Design</span>
-                            <img src="/images/portfolios/logo4.jpeg" alt="Creative Vector Emblem" loading="lazy">
+                            <img src="/images/portfolios/logo4.jpg" alt="Creative Vector Emblem" loading="lazy">
                             <div class="gd-portfolio-overlay">
                                 <div class="gd-portfolio-zoom-btn">
                                     <i class="fas fa-search-plus"></i>
@@ -322,10 +322,10 @@
 
                 <!-- Logo Design: Corporate Brand Logo -->
                 <div class="col-xl-4 col-lg-4 col-md-6 gd-portfolio-item" data-category="logos" data-in-all="false" style="display: none;">
-                    <div class="gd-portfolio-card" data-src="/images/portfolios/logo5.jpeg" data-caption="Corporate Brand Logo">
+                    <div class="gd-portfolio-card" data-src="/images/portfolios/logo5.jpg" data-caption="Corporate Brand Logo">
                         <div class="gd-portfolio-img-box">
                             <span class="gd-portfolio-badge">Logo Design</span>
-                            <img src="/images/portfolios/logo5.jpeg" alt="Corporate Brand Logo" loading="lazy">
+                            <img src="/images/portfolios/logo5.jpg" alt="Corporate Brand Logo" loading="lazy">
                             <div class="gd-portfolio-overlay">
                                 <div class="gd-portfolio-zoom-btn">
                                     <i class="fas fa-search-plus"></i>
@@ -337,10 +337,10 @@
 
                 <!-- Logo Design: Abstract Tech Logo -->
                 <div class="col-xl-4 col-lg-4 col-md-6 gd-portfolio-item" data-category="logos" data-in-all="false" style="display: none;">
-                    <div class="gd-portfolio-card" data-src="/images/portfolios/logo6.jpeg" data-caption="Abstract Tech Logo">
+                    <div class="gd-portfolio-card" data-src="/images/portfolios/logo6.jpg" data-caption="Abstract Tech Logo">
                         <div class="gd-portfolio-img-box">
                             <span class="gd-portfolio-badge">Logo Design</span>
-                            <img src="/images/portfolios/logo6.jpeg" alt="Abstract Tech Logo" loading="lazy">
+                            <img src="/images/portfolios/logo6.jpg" alt="Abstract Tech Logo" loading="lazy">
                             <div class="gd-portfolio-overlay">
                                 <div class="gd-portfolio-zoom-btn">
                                     <i class="fas fa-search-plus"></i>
@@ -352,10 +352,10 @@
 
                 <!-- Logo Design: Abstract Tech Logo -->
                 <div class="col-xl-4 col-lg-4 col-md-6 gd-portfolio-item" data-category="logos" data-in-all="false" style="display: none;">
-                    <div class="gd-portfolio-card" data-src="/images/portfolios/logo7.jpeg" data-caption="Abstract Tech Logo">
+                    <div class="gd-portfolio-card" data-src="/images/portfolios/logo7.jpg" data-caption="Abstract Tech Logo">
                         <div class="gd-portfolio-img-box">
                             <span class="gd-portfolio-badge">Logo Design</span>
-                            <img src="/images/portfolios/logo7.jpeg" alt="Abstract Tech Logo" loading="lazy">
+                            <img src="/images/portfolios/logo7.jpg" alt="Abstract Tech Logo" loading="lazy">
                             <div class="gd-portfolio-overlay">
                                 <div class="gd-portfolio-zoom-btn">
                                     <i class="fas fa-search-plus"></i>
@@ -367,10 +367,10 @@
 
                 <!-- Logo Design: Abstract Tech Logo -->
                 <div class="col-xl-4 col-lg-4 col-md-6 gd-portfolio-item" data-category="logos" data-in-all="false" style="display: none;">
-                    <div class="gd-portfolio-card" data-src="/images/portfolios/logo8.jpeg" data-caption="Abstract Tech Logo">
+                    <div class="gd-portfolio-card" data-src="/images/portfolios/logo8.jpg" data-caption="Abstract Tech Logo">
                         <div class="gd-portfolio-img-box">
                             <span class="gd-portfolio-badge">Logo Design</span>
-                            <img src="/images/portfolios/logo8.jpeg" alt="Abstract Tech Logo" loading="lazy">
+                            <img src="/images/portfolios/logo8.jpg" alt="Abstract Tech Logo" loading="lazy">
                             <div class="gd-portfolio-overlay">
                                 <div class="gd-portfolio-zoom-btn">
                                     <i class="fas fa-search-plus"></i>
@@ -382,10 +382,10 @@
 
                 <!-- Logo Design: Abstract Tech Logo -->
                 <div class="col-xl-4 col-lg-4 col-md-6 gd-portfolio-item" data-category="logos" data-in-all="false" style="display: none;">
-                    <div class="gd-portfolio-card" data-src="/images/portfolios/logo9.jpeg" data-caption="Abstract Tech Logo">
+                    <div class="gd-portfolio-card" data-src="/images/portfolios/logo9.jpg" data-caption="Abstract Tech Logo">
                         <div class="gd-portfolio-img-box">
                             <span class="gd-portfolio-badge">Logo Design</span>
-                            <img src="/images/portfolios/logo9.jpeg" alt="Abstract Tech Logo" loading="lazy">
+                            <img src="/images/portfolios/logo9.jpg" alt="Abstract Tech Logo" loading="lazy">
                             <div class="gd-portfolio-overlay">
                                 <div class="gd-portfolio-zoom-btn">
                                     <i class="fas fa-search-plus"></i>
@@ -397,10 +397,10 @@
 
                 <!-- Business Card: Executive Matte Card -->
                 <div class="col-xl-4 col-lg-4 col-md-6 gd-portfolio-item" data-category="business-cards" data-in-all="true">
-                    <div class="gd-portfolio-card" data-src="/images/portfolios/card1.jpeg" data-caption="Executive Matte Card">
+                    <div class="gd-portfolio-card" data-src="/images/portfolios/card1.jpg" data-caption="Executive Matte Card">
                         <div class="gd-portfolio-img-box">
                             <span class="gd-portfolio-badge">Business Card</span>
-                            <img src="/images/portfolios/card1.jpeg" alt="Executive Matte Card" loading="lazy">
+                            <img src="/images/portfolios/card1.jpg" alt="Executive Matte Card" loading="lazy">
                             <div class="gd-portfolio-overlay">
                                 <div class="gd-portfolio-zoom-btn">
                                     <i class="fas fa-search-plus"></i>
@@ -412,10 +412,10 @@
 
                 <!-- Business Card: Luxury Foil Stamp Card -->
                 <div class="col-xl-4 col-lg-4 col-md-6 gd-portfolio-item" data-category="business-cards" data-in-all="true">
-                    <div class="gd-portfolio-card" data-src="/images/portfolios/card2.jpeg" data-caption="Luxury Foil Stamp Card">
+                    <div class="gd-portfolio-card" data-src="/images/portfolios/card2.jpg" data-caption="Luxury Foil Stamp Card">
                         <div class="gd-portfolio-img-box">
                             <span class="gd-portfolio-badge">Business Card</span>
-                            <img src="/images/portfolios/card2.jpeg" alt="Luxury Foil Stamp Card" loading="lazy">
+                            <img src="/images/portfolios/card2.jpg" alt="Luxury Foil Stamp Card" loading="lazy">
                             <div class="gd-portfolio-overlay">
                                 <div class="gd-portfolio-zoom-btn">
                                     <i class="fas fa-search-plus"></i>
@@ -427,10 +427,10 @@
 
                 <!-- Business Card: Minimal Corporate Card -->
                 <div class="col-xl-4 col-lg-4 col-md-6 gd-portfolio-item" data-category="business-cards" data-in-all="true">
-                    <div class="gd-portfolio-card" data-src="/images/portfolios/card3.jpeg" data-caption="Minimal Corporate Card">
+                    <div class="gd-portfolio-card" data-src="/images/portfolios/card3.jpg" data-caption="Minimal Corporate Card">
                         <div class="gd-portfolio-img-box">
                             <span class="gd-portfolio-badge">Business Card</span>
-                            <img src="/images/portfolios/card3.jpeg" alt="Minimal Corporate Card" loading="lazy">
+                            <img src="/images/portfolios/card3.jpg" alt="Minimal Corporate Card" loading="lazy">
                             <div class="gd-portfolio-overlay">
                                 <div class="gd-portfolio-zoom-btn">
                                     <i class="fas fa-search-plus"></i>
@@ -442,10 +442,10 @@
 
                 <!-- Business Card: Creative Agency Card -->
                 <div class="col-xl-4 col-lg-4 col-md-6 gd-portfolio-item" data-category="business-cards" data-in-all="false" style="display: none;">
-                    <div class="gd-portfolio-card" data-src="/images/portfolios/card4.jpeg" data-caption="Creative Agency Card">
+                    <div class="gd-portfolio-card" data-src="/images/portfolios/card4.jpg" data-caption="Creative Agency Card">
                         <div class="gd-portfolio-img-box">
                             <span class="gd-portfolio-badge">Business Card</span>
-                            <img src="/images/portfolios/card4.jpeg" alt="Creative Agency Card" loading="lazy">
+                            <img src="/images/portfolios/card4.jpg" alt="Creative Agency Card" loading="lazy">
                             <div class="gd-portfolio-overlay">
                                 <div class="gd-portfolio-zoom-btn">
                                     <i class="fas fa-search-plus"></i>
@@ -457,10 +457,10 @@
 
                 <!-- Business Card: Dual-Tone Premium Card -->
                 <div class="col-xl-4 col-lg-4 col-md-6 gd-portfolio-item" data-category="business-cards" data-in-all="false" style="display: none;">
-                    <div class="gd-portfolio-card" data-src="/images/portfolios/card5.jpeg" data-caption="Dual-Tone Premium Card">
+                    <div class="gd-portfolio-card" data-src="/images/portfolios/card5.jpg" data-caption="Dual-Tone Premium Card">
                         <div class="gd-portfolio-img-box">
                             <span class="gd-portfolio-badge">Business Card</span>
-                            <img src="/images/portfolios/card5.jpeg" alt="Dual-Tone Premium Card" loading="lazy">
+                            <img src="/images/portfolios/card5.jpg" alt="Dual-Tone Premium Card" loading="lazy">
                             <div class="gd-portfolio-overlay">
                                 <div class="gd-portfolio-zoom-btn">
                                     <i class="fas fa-search-plus"></i>
@@ -472,10 +472,10 @@
 
                 <!-- Menu Card: Fine Dining Restaurant Menu -->
                 <div class="col-xl-4 col-lg-4 col-md-6 gd-portfolio-item" data-category="menu-cards" data-in-all="true">
-                    <div class="gd-portfolio-card" data-src="/images/portfolios/menu1.jpeg" data-caption="Fine Dining Restaurant Menu">
+                    <div class="gd-portfolio-card" data-src="/images/portfolios/menu1.jpg" data-caption="Fine Dining Restaurant Menu">
                         <div class="gd-portfolio-img-box">
                             <span class="gd-portfolio-badge">Menu Card</span>
-                            <img src="/images/portfolios/menu1.jpeg" alt="Fine Dining Restaurant Menu" loading="lazy">
+                            <img src="/images/portfolios/menu1.jpg" alt="Fine Dining Restaurant Menu" loading="lazy">
                             <div class="gd-portfolio-overlay">
                                 <div class="gd-portfolio-zoom-btn">
                                     <i class="fas fa-search-plus"></i>
@@ -487,10 +487,10 @@
 
                 <!-- Menu Card: Artisan Cafe Drink Menu -->
                 <div class="col-xl-4 col-lg-4 col-md-6 gd-portfolio-item" data-category="menu-cards" data-in-all="true">
-                    <div class="gd-portfolio-card" data-src="/images/portfolios/menu2.jpeg" data-caption="Artisan Cafe Drink Menu">
+                    <div class="gd-portfolio-card" data-src="/images/portfolios/menu2.jpg" data-caption="Artisan Cafe Drink Menu">
                         <div class="gd-portfolio-img-box">
                             <span class="gd-portfolio-badge">Menu Card</span>
-                            <img src="/images/portfolios/menu2.jpeg" alt="Artisan Cafe Drink Menu" loading="lazy">
+                            <img src="/images/portfolios/menu2.jpg" alt="Artisan Cafe Drink Menu" loading="lazy">
                             <div class="gd-portfolio-overlay">
                                 <div class="gd-portfolio-zoom-btn">
                                     <i class="fas fa-search-plus"></i>
@@ -502,10 +502,10 @@
 
                 <!-- Menu Card: Bistro Table Menu -->
                 <div class="col-xl-4 col-lg-4 col-md-6 gd-portfolio-item" data-category="menu-cards" data-in-all="true">
-                    <div class="gd-portfolio-card" data-src="/images/portfolios/menu3.jpeg" data-caption="Bistro Table Menu">
+                    <div class="gd-portfolio-card" data-src="/images/portfolios/menu3.jpg" data-caption="Bistro Table Menu">
                         <div class="gd-portfolio-img-box">
                             <span class="gd-portfolio-badge">Menu Card</span>
-                            <img src="/images/portfolios/menu3.jpeg" alt="Bistro Table Menu" loading="lazy">
+                            <img src="/images/portfolios/menu3.jpg" alt="Bistro Table Menu" loading="lazy">
                             <div class="gd-portfolio-overlay">
                                 <div class="gd-portfolio-zoom-btn">
                                     <i class="fas fa-search-plus"></i>
@@ -517,10 +517,10 @@
 
                 <!-- Menu Card: Gourmet Food Catalog -->
                 <div class="col-xl-4 col-lg-4 col-md-6 gd-portfolio-item" data-category="menu-cards" data-in-all="false" style="display: none;">
-                    <div class="gd-portfolio-card" data-src="/images/portfolios/menu4.jpeg" data-caption="Gourmet Food Catalog">
+                    <div class="gd-portfolio-card" data-src="/images/portfolios/menu4.jpg" data-caption="Gourmet Food Catalog">
                         <div class="gd-portfolio-img-box">
                             <span class="gd-portfolio-badge">Menu Card</span>
-                            <img src="/images/portfolios/menu4.jpeg" alt="Gourmet Food Catalog" loading="lazy">
+                            <img src="/images/portfolios/menu4.jpg" alt="Gourmet Food Catalog" loading="lazy">
                             <div class="gd-portfolio-overlay">
                                 <div class="gd-portfolio-zoom-btn">
                                     <i class="fas fa-search-plus"></i>
@@ -532,10 +532,10 @@
 
                 <!-- Menu Card: Cocktail & Lounge Menu -->
                 <div class="col-xl-4 col-lg-4 col-md-6 gd-portfolio-item" data-category="menu-cards" data-in-all="false" style="display: none;">
-                    <div class="gd-portfolio-card" data-src="/images/portfolios/menu5.jpeg" data-caption="Cocktail & Lounge Menu">
+                    <div class="gd-portfolio-card" data-src="/images/portfolios/menu5.jpg" data-caption="Cocktail & Lounge Menu">
                         <div class="gd-portfolio-img-box">
                             <span class="gd-portfolio-badge">Menu Card</span>
-                            <img src="/images/portfolios/menu5.jpeg" alt="Cocktail & Lounge Menu" loading="lazy">
+                            <img src="/images/portfolios/menu5.jpg" alt="Cocktail & Lounge Menu" loading="lazy">
                             <div class="gd-portfolio-overlay">
                                 <div class="gd-portfolio-zoom-btn">
                                     <i class="fas fa-search-plus"></i>
@@ -547,10 +547,10 @@
 
                 <!-- Menu Card: Bakery & Dessert Menu -->
                 <div class="col-xl-4 col-lg-4 col-md-6 gd-portfolio-item" data-category="menu-cards" data-in-all="false" style="display: none;">
-                    <div class="gd-portfolio-card" data-src="/images/portfolios/menu6.jpeg" data-caption="Bakery & Dessert Menu">
+                    <div class="gd-portfolio-card" data-src="/images/portfolios/menu6.jpg" data-caption="Bakery & Dessert Menu">
                         <div class="gd-portfolio-img-box">
                             <span class="gd-portfolio-badge">Menu Card</span>
-                            <img src="/images/portfolios/menu6.jpeg" alt="Bakery & Dessert Menu" loading="lazy">
+                            <img src="/images/portfolios/menu6.jpg" alt="Bakery & Dessert Menu" loading="lazy">
                             <div class="gd-portfolio-overlay">
                                 <div class="gd-portfolio-zoom-btn">
                                     <i class="fas fa-search-plus"></i>
@@ -562,10 +562,10 @@
 
                 <!-- Brochure: Tri-Fold Corporate Brochure -->
                 <div class="col-xl-4 col-lg-4 col-md-6 gd-portfolio-item" data-category="brochures" data-in-all="true">
-                    <div class="gd-portfolio-card" data-src="/images/portfolios/brochure1.jpeg" data-caption="Tri-Fold Corporate Brochure">
+                    <div class="gd-portfolio-card" data-src="/images/portfolios/brochure1.jpg" data-caption="Tri-Fold Corporate Brochure">
                         <div class="gd-portfolio-img-box">
                             <span class="gd-portfolio-badge">Brochure</span>
-                            <img src="/images/portfolios/brochure1.jpeg" alt="Tri-Fold Corporate Brochure" loading="lazy">
+                            <img src="/images/portfolios/brochure1.jpg" alt="Tri-Fold Corporate Brochure" loading="lazy">
                             <div class="gd-portfolio-overlay">
                                 <div class="gd-portfolio-zoom-btn">
                                     <i class="fas fa-search-plus"></i>
@@ -577,10 +577,10 @@
 
                 <!-- Brochure: Company Profile Booklet -->
                 <div class="col-xl-4 col-lg-4 col-md-6 gd-portfolio-item" data-category="brochures" data-in-all="true">
-                    <div class="gd-portfolio-card" data-src="/images/portfolios/brochure2.jpeg" data-caption="Company Profile Booklet">
+                    <div class="gd-portfolio-card" data-src="/images/portfolios/brochure2.jpg" data-caption="Company Profile Booklet">
                         <div class="gd-portfolio-img-box">
                             <span class="gd-portfolio-badge">Brochure</span>
-                            <img src="/images/portfolios/brochure2.jpeg" alt="Company Profile Booklet" loading="lazy">
+                            <img src="/images/portfolios/brochure2.jpg" alt="Company Profile Booklet" loading="lazy">
                             <div class="gd-portfolio-overlay">
                                 <div class="gd-portfolio-zoom-btn">
                                     <i class="fas fa-search-plus"></i>
@@ -592,10 +592,10 @@
 
                 <!-- Brochure: Service Showcase Fold -->
                 <div class="col-xl-4 col-lg-4 col-md-6 gd-portfolio-item" data-category="brochures" data-in-all="true">
-                    <div class="gd-portfolio-card" data-src="/images/portfolios/brochure3.jpeg" data-caption="Service Showcase Fold">
+                    <div class="gd-portfolio-card" data-src="/images/portfolios/brochure3.jpg" data-caption="Service Showcase Fold">
                         <div class="gd-portfolio-img-box">
                             <span class="gd-portfolio-badge">Brochure</span>
-                            <img src="/images/portfolios/brochure3.jpeg" alt="Service Showcase Fold" loading="lazy">
+                            <img src="/images/portfolios/brochure3.jpg" alt="Service Showcase Fold" loading="lazy">
                             <div class="gd-portfolio-overlay">
                                 <div class="gd-portfolio-zoom-btn">
                                     <i class="fas fa-search-plus"></i>
@@ -607,10 +607,10 @@
 
                 <!-- Brochure: Marketing Campaign Leaflet -->
                 <div class="col-xl-4 col-lg-4 col-md-6 gd-portfolio-item" data-category="brochures" data-in-all="false" style="display: none;">
-                    <div class="gd-portfolio-card" data-src="/images/portfolios/brochure4.jpeg" data-caption="Marketing Campaign Leaflet">
+                    <div class="gd-portfolio-card" data-src="/images/portfolios/brochure4.jpg" data-caption="Marketing Campaign Leaflet">
                         <div class="gd-portfolio-img-box">
                             <span class="gd-portfolio-badge">Brochure</span>
-                            <img src="/images/portfolios/brochure4.jpeg" alt="Marketing Campaign Leaflet" loading="lazy">
+                            <img src="/images/portfolios/brochure4.jpg" alt="Marketing Campaign Leaflet" loading="lazy">
                             <div class="gd-portfolio-overlay">
                                 <div class="gd-portfolio-zoom-btn">
                                     <i class="fas fa-search-plus"></i>
@@ -622,10 +622,10 @@
 
                 <!-- Brochure: Executive Presentation Folio -->
                 <div class="col-xl-4 col-lg-4 col-md-6 gd-portfolio-item" data-category="brochures" data-in-all="false" style="display: none;">
-                    <div class="gd-portfolio-card" data-src="/images/portfolios/brochure5.jpeg" data-caption="Executive Presentation Folio">
+                    <div class="gd-portfolio-card" data-src="/images/portfolios/brochure5.jpg" data-caption="Executive Presentation Folio">
                         <div class="gd-portfolio-img-box">
                             <span class="gd-portfolio-badge">Brochure</span>
-                            <img src="/images/portfolios/brochure5.jpeg" alt="Executive Presentation Folio" loading="lazy">
+                            <img src="/images/portfolios/brochure5.jpg" alt="Executive Presentation Folio" loading="lazy">
                             <div class="gd-portfolio-overlay">
                                 <div class="gd-portfolio-zoom-btn">
                                     <i class="fas fa-search-plus"></i>
@@ -637,10 +637,10 @@
 
                 <!-- Brochure: Event & Exhibition Flyer -->
                 <div class="col-xl-4 col-lg-4 col-md-6 gd-portfolio-item" data-category="brochures" data-in-all="false" style="display: none;">
-                    <div class="gd-portfolio-card" data-src="/images/portfolios/brochure6.jpeg" data-caption="Event & Exhibition Flyer">
+                    <div class="gd-portfolio-card" data-src="/images/portfolios/brochure6.jpg" data-caption="Event & Exhibition Flyer">
                         <div class="gd-portfolio-img-box">
                             <span class="gd-portfolio-badge">Brochure</span>
-                            <img src="/images/portfolios/brochure6.jpeg" alt="Event & Exhibition Flyer" loading="lazy">
+                            <img src="/images/portfolios/brochure6.jpg" alt="Event & Exhibition Flyer" loading="lazy">
                             <div class="gd-portfolio-overlay">
                                 <div class="gd-portfolio-zoom-btn">
                                     <i class="fas fa-search-plus"></i>
@@ -652,10 +652,10 @@
 
                 <!-- Packaging: Luxury Retail Box Packaging -->
                 <div class="col-xl-4 col-lg-4 col-md-6 gd-portfolio-item" data-category="packaging" data-in-all="true">
-                    <div class="gd-portfolio-card" data-src="/images/portfolios/packaging1.jpeg" data-caption="Luxury Retail Box Packaging">
+                    <div class="gd-portfolio-card" data-src="/images/portfolios/packaging1.jpg" data-caption="Luxury Retail Box Packaging">
                         <div class="gd-portfolio-img-box">
                             <span class="gd-portfolio-badge">Packaging</span>
-                            <img src="/images/portfolios/packaging1.jpeg" alt="Luxury Retail Box Packaging" loading="lazy">
+                            <img src="/images/portfolios/packaging1.jpg" alt="Luxury Retail Box Packaging" loading="lazy">
                             <div class="gd-portfolio-overlay">
                                 <div class="gd-portfolio-zoom-btn">
                                     <i class="fas fa-search-plus"></i>
@@ -667,10 +667,10 @@
 
                 <!-- Packaging: Custom Product Label -->
                 <div class="col-xl-4 col-lg-4 col-md-6 gd-portfolio-item" data-category="packaging" data-in-all="true">
-                    <div class="gd-portfolio-card" data-src="/images/portfolios/packaging2.jpeg" data-caption="Custom Product Label">
+                    <div class="gd-portfolio-card" data-src="/images/portfolios/packaging2.jpg" data-caption="Custom Product Label">
                         <div class="gd-portfolio-img-box">
                             <span class="gd-portfolio-badge">Packaging</span>
-                            <img src="/images/portfolios/packaging2.jpeg" alt="Custom Product Label" loading="lazy">
+                            <img src="/images/portfolios/packaging2.jpg" alt="Custom Product Label" loading="lazy">
                             <div class="gd-portfolio-overlay">
                                 <div class="gd-portfolio-zoom-btn">
                                     <i class="fas fa-search-plus"></i>
@@ -682,10 +682,10 @@
 
                 <!-- Packaging: Eco-Friendly Pouch Design -->
                 <div class="col-xl-4 col-lg-4 col-md-6 gd-portfolio-item" data-category="packaging" data-in-all="true">
-                    <div class="gd-portfolio-card" data-src="/images/portfolios/packaging3.jpeg" data-caption="Eco-Friendly Pouch Design">
+                    <div class="gd-portfolio-card" data-src="/images/portfolios/packaging3.jpg" data-caption="Eco-Friendly Pouch Design">
                         <div class="gd-portfolio-img-box">
                             <span class="gd-portfolio-badge">Packaging</span>
-                            <img src="/images/portfolios/packaging3.jpeg" alt="Eco-Friendly Pouch Design" loading="lazy">
+                            <img src="/images/portfolios/packaging3.jpg" alt="Eco-Friendly Pouch Design" loading="lazy">
                             <div class="gd-portfolio-overlay">
                                 <div class="gd-portfolio-zoom-btn">
                                     <i class="fas fa-search-plus"></i>
@@ -697,10 +697,10 @@
 
                 <!-- Packaging: Cosmetic Bottle Packaging -->
                 <div class="col-xl-4 col-lg-4 col-md-6 gd-portfolio-item" data-category="packaging" data-in-all="false" style="display: none;">
-                    <div class="gd-portfolio-card" data-src="/images/portfolios/packaging4.jpeg" data-caption="Cosmetic Bottle Packaging">
+                    <div class="gd-portfolio-card" data-src="/images/portfolios/packaging4.jpg" data-caption="Cosmetic Bottle Packaging">
                         <div class="gd-portfolio-img-box">
                             <span class="gd-portfolio-badge">Packaging</span>
-                            <img src="/images/portfolios/packaging4.jpeg" alt="Cosmetic Bottle Packaging" loading="lazy">
+                            <img src="/images/portfolios/packaging4.jpg" alt="Cosmetic Bottle Packaging" loading="lazy">
                             <div class="gd-portfolio-overlay">
                                 <div class="gd-portfolio-zoom-btn">
                                     <i class="fas fa-search-plus"></i>
@@ -712,10 +712,10 @@
 
                 <!-- Packaging: Premium Merchandise Box -->
                 <div class="col-xl-4 col-lg-4 col-md-6 gd-portfolio-item" data-category="packaging" data-in-all="false" style="display: none;">
-                    <div class="gd-portfolio-card" data-src="/images/portfolios/packaging5.jpeg" data-caption="Premium Merchandise Box">
+                    <div class="gd-portfolio-card" data-src="/images/portfolios/packaging5.jpg" data-caption="Premium Merchandise Box">
                         <div class="gd-portfolio-img-box">
                             <span class="gd-portfolio-badge">Packaging</span>
-                            <img src="/images/portfolios/packaging5.jpeg" alt="Premium Merchandise Box" loading="lazy">
+                            <img src="/images/portfolios/packaging5.jpg" alt="Premium Merchandise Box" loading="lazy">
                             <div class="gd-portfolio-overlay">
                                 <div class="gd-portfolio-zoom-btn">
                                     <i class="fas fa-search-plus"></i>
@@ -727,10 +727,10 @@
 
                 <!-- UI/UX: SaaS Analytics Dashboard UI -->
                 <div class="col-xl-4 col-lg-4 col-md-6 gd-portfolio-item" data-category="ui-ux" data-in-all="true">
-                    <div class="gd-portfolio-card" data-src="/images/portfolios/ui1.jpeg" data-caption="SaaS Analytics Dashboard UI">
+                    <div class="gd-portfolio-card" data-src="/images/portfolios/ui1.jpg" data-caption="SaaS Analytics Dashboard UI">
                         <div class="gd-portfolio-img-box">
                             <span class="gd-portfolio-badge">UI/UX</span>
-                            <img src="/images/portfolios/ui1.jpeg" alt="SaaS Analytics Dashboard UI" loading="lazy">
+                            <img src="/images/portfolios/ui1.jpg" alt="SaaS Analytics Dashboard UI" loading="lazy">
                             <div class="gd-portfolio-overlay">
                                 <div class="gd-portfolio-zoom-btn">
                                     <i class="fas fa-search-plus"></i>
@@ -742,10 +742,10 @@
 
                 <!-- UI/UX: Mobile App User Flow -->
                 <div class="col-xl-4 col-lg-4 col-md-6 gd-portfolio-item" data-category="ui-ux" data-in-all="true">
-                    <div class="gd-portfolio-card" data-src="/images/portfolios/ui2.jpeg" data-caption="Mobile App User Flow">
+                    <div class="gd-portfolio-card" data-src="/images/portfolios/ui2.jpg" data-caption="Mobile App User Flow">
                         <div class="gd-portfolio-img-box">
                             <span class="gd-portfolio-badge">UI/UX</span>
-                            <img src="/images/portfolios/ui2.jpeg" alt="Mobile App User Flow" loading="lazy">
+                            <img src="/images/portfolios/ui2.jpg" alt="Mobile App User Flow" loading="lazy">
                             <div class="gd-portfolio-overlay">
                                 <div class="gd-portfolio-zoom-btn">
                                     <i class="fas fa-search-plus"></i>
@@ -757,10 +757,10 @@
 
                 <!-- UI/UX: Fintech Platform Interface -->
                 <div class="col-xl-4 col-lg-4 col-md-6 gd-portfolio-item" data-category="ui-ux" data-in-all="true">
-                    <div class="gd-portfolio-card" data-src="/images/portfolios/ui3.jpeg" data-caption="Fintech Platform Interface">
+                    <div class="gd-portfolio-card" data-src="/images/portfolios/ui3.jpg" data-caption="Fintech Platform Interface">
                         <div class="gd-portfolio-img-box">
                             <span class="gd-portfolio-badge">UI/UX</span>
-                            <img src="/images/portfolios/ui3.jpeg" alt="Fintech Platform Interface" loading="lazy">
+                            <img src="/images/portfolios/ui3.jpg" alt="Fintech Platform Interface" loading="lazy">
                             <div class="gd-portfolio-overlay">
                                 <div class="gd-portfolio-zoom-btn">
                                     <i class="fas fa-search-plus"></i>
@@ -772,10 +772,10 @@
 
                 <!-- UI/UX: E-Commerce Product Experience -->
                 <div class="col-xl-4 col-lg-4 col-md-6 gd-portfolio-item" data-category="ui-ux" data-in-all="false" style="display: none;">
-                    <div class="gd-portfolio-card" data-src="/images/portfolios/ui4.jpeg" data-caption="E-Commerce Product Experience">
+                    <div class="gd-portfolio-card" data-src="/images/portfolios/ui4.jpg" data-caption="E-Commerce Product Experience">
                         <div class="gd-portfolio-img-box">
                             <span class="gd-portfolio-badge">UI/UX</span>
-                            <img src="/images/portfolios/ui4.jpeg" alt="E-Commerce Product Experience" loading="lazy">
+                            <img src="/images/portfolios/ui4.jpg" alt="E-Commerce Product Experience" loading="lazy">
                             <div class="gd-portfolio-overlay">
                                 <div class="gd-portfolio-zoom-btn">
                                     <i class="fas fa-search-plus"></i>
@@ -787,10 +787,10 @@
 
                 <!-- UI/UX: Healthcare App Design System -->
                 <div class="col-xl-4 col-lg-4 col-md-6 gd-portfolio-item" data-category="ui-ux" data-in-all="false" style="display: none;">
-                    <div class="gd-portfolio-card" data-src="/images/portfolios/ui5.jpeg" data-caption="Healthcare App Design System">
+                    <div class="gd-portfolio-card" data-src="/images/portfolios/ui5.jpg" data-caption="Healthcare App Design System">
                         <div class="gd-portfolio-img-box">
                             <span class="gd-portfolio-badge">UI/UX</span>
-                            <img src="/images/portfolios/ui5.jpeg" alt="Healthcare App Design System" loading="lazy">
+                            <img src="/images/portfolios/ui5.jpg" alt="Healthcare App Design System" loading="lazy">
                             <div class="gd-portfolio-overlay">
                                 <div class="gd-portfolio-zoom-btn">
                                     <i class="fas fa-search-plus"></i>

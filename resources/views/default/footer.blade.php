@@ -8,7 +8,10 @@
     <div class="container">
         <div class="footer-top">
             <div class="footer-col">
-                <div class="logo mb-4" style="color: var(--primary);">NEXDEV VISION</div>
+                <div class="logo mb-4 d-flex align-items-center gap-2" style="font-size: 1.5rem; font-weight: 800;">
+                    <img src="/images/icon.png" alt="Nexdev Vision" style="height: 36px; width: 36px; object-fit: contain;">
+                    <span style="color: #ffffff; letter-spacing: 0.5px;">NEXDEV <span style="color: var(--primary, #007bff);">VISION</span></span>
+                </div>
                 <p style="color: #ccc;">
                     Transforming ideas into digital reality.
                     Your partner for design, development, and marketing success.

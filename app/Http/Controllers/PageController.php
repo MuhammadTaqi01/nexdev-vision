@@ -167,8 +167,9 @@ class PageController extends Controller
     ];
     public function index()
     {
-        SEOMeta::setTitle('Nexdev Vision | Web & Graphic Solutions');
-        SEOMeta::setDescription('Welcome to the home page of our Nexdev Vision site.');
+        SEOMeta::setTitle('Nexdev Vision | Custom Web Development, UI/UX Design & AI Solutions');
+        SEOMeta::setDescription('Nexdev Vision is a top-rated digital agency offering custom web development, UI/UX graphic design, SEO digital marketing, business automation, and AI solutions to scale modern brands globally.');
+        SEOMeta::addKeyword(['Custom Web Development', 'UI/UX Design Agency', 'Digital Marketing Services', 'SEO Agency', 'Business Automation', 'AI Engineering', 'SaaS Development', 'Nexdev Vision']);
         SEOMeta::addMeta('robots', 'index,follow');
 
         return view('pages.index');
@@ -176,8 +177,9 @@ class PageController extends Controller
 
     public function consulting()
     {
-        SEOMeta::setTitle('Nexdev Vision | Web & Graphic Solutions');
-        SEOMeta::setDescription('Welcome to the home page of our Nexdev Vision site.');
+        SEOMeta::setTitle('Strategic Tech Consulting & Digital Transformation | Nexdev Vision');
+        SEOMeta::setDescription('Accelerate business growth with Nexdev Vision’s strategic tech consulting. We provide digital transformation roadmaps, cloud architecture, and startup MVP advisory.');
+        SEOMeta::addKeyword(['Tech Consulting', 'Digital Transformation Consulting', 'IT Strategy', 'Cloud Architecture Advisory', 'Startup Tech Consultant']);
         SEOMeta::addMeta('robots', 'index,follow');
 
         return view('pages.consulting');
@@ -185,8 +187,9 @@ class PageController extends Controller
 
     public function contactus()
     {
-        SEOMeta::setTitle('Nexdev Vision | Web & Graphic Solutions');
-        SEOMeta::setDescription('Welcome to the home page of our Nexdev Vision site.');
+        SEOMeta::setTitle('Contact Us | Hire Web Developers & Designers | Nexdev Vision');
+        SEOMeta::setDescription('Ready to elevate your digital presence? Contact Nexdev Vision today for expert web development, brand design, and AI automation consultations.');
+        SEOMeta::addKeyword(['Contact Nexdev Vision', 'Hire Web Developers', 'Hire Graphic Designers', 'Digital Agency Consultation', 'Tech Support']);
         SEOMeta::addMeta('robots', 'index,follow');
 
         return view('pages.contactus');
@@ -194,8 +197,9 @@ class PageController extends Controller
 
     public function logoDesign()
     {
-        SEOMeta::setTitle('Nexdev Vision | Web & Graphic Solutions');
-        SEOMeta::setDescription('Welcome to the home page of our Nexdev Vision site.');
+        SEOMeta::setTitle('Custom Logo Design & Brand Identity Services | Nexdev Vision');
+        SEOMeta::setDescription('Craft an unforgettable visual identity. Nexdev Vision designs iconic, modern, scalable custom logos and complete brand style guidelines for businesses.');
+        SEOMeta::addKeyword(['Custom Logo Design', 'Brand Identity Design', 'Business Logo Designer', 'Minimalist Logo', 'Vector Brand Mark']);
         SEOMeta::addMeta('robots', 'index,follow');
 
         return view('pages.logodesign');
@@ -203,8 +207,9 @@ class PageController extends Controller
 
     public function pricing()
     {
-        SEOMeta::setTitle('Nexdev Vision | Pricing');
-        SEOMeta::setDescription('Choose the plan that fits your business needs.');
+        SEOMeta::setTitle('Affordable Pricing Plans & Packages | Web, Design & Marketing | Nexdev Vision');
+        SEOMeta::setDescription('Transparent, value-driven pricing packages for web development, logo design, SEO marketing, and workflow automation. Choose the perfect plan for your business.');
+        SEOMeta::addKeyword(['Web Development Pricing', 'Graphic Design Packages', 'Digital Marketing Cost', 'Affordable Agency Plans', 'Transparent Development Rates']);
         SEOMeta::addMeta('robots', 'index,follow');
 
         return view('pages.pricing');
@@ -212,8 +217,9 @@ class PageController extends Controller
 
     public function webDevelopment()
     {
-        SEOMeta::setTitle('Nexdev Vision | Web Development Services');
-        SEOMeta::setDescription('Custom web development solutions that help your business grow with fast, secure and scalable websites and web applications.');
+        SEOMeta::setTitle('Custom Web Development Services | Fast, Secure & Scalable | Nexdev Vision');
+        SEOMeta::setDescription('High-performance custom web development by Nexdev Vision. We build bespoke web applications, eCommerce stores, and scalable platforms with Laravel, React & Node.js.');
+        SEOMeta::addKeyword(['Custom Web Development', 'Full Stack Development Services', 'Laravel Developers', 'React Web Apps', 'eCommerce Website Development', 'Fast Secure Websites']);
         SEOMeta::addMeta('robots', 'index,follow');
 
         return view('pages.web-development');
@@ -221,8 +227,9 @@ class PageController extends Controller
 
     public function graphicDesign()
     {
-        SEOMeta::setTitle('Nexdev Vision | Graphic Design Services');
-        SEOMeta::setDescription('Creative graphic designs that build strong brand identity across digital and print.');
+        SEOMeta::setTitle('Creative Graphic Design & Brand Identity Agency | Nexdev Vision');
+        SEOMeta::setDescription('Build a powerful brand with Nexdev Vision’s graphic design services. From custom logo marks and marketing collateral to Figma UI/UX interfaces and print assets.');
+        SEOMeta::addKeyword(['Graphic Design Services', 'Creative Design Agency', 'Logo & Branding', 'Figma UI UX Design', 'Print Collateral', 'Packaging Design']);
         SEOMeta::addMeta('robots', 'index,follow');
 
         return view('pages.graphic-design');
@@ -230,8 +237,9 @@ class PageController extends Controller
 
     public function digitalMarketingPage()
     {
-        SEOMeta::setTitle('Nexdev Vision | Digital Marketing Services');
-        SEOMeta::setDescription('Grow your business with smart digital marketing strategies that deliver measurable results and higher ROI.');
+        SEOMeta::setTitle('Results-Driven Digital Marketing & SEO Services | Nexdev Vision');
+        SEOMeta::setDescription('Drive high-intent traffic, rank #1 on Google, and convert leads with Nexdev Vision’s data-driven SEO, Google Ads PPC, social media marketing, and growth funnels.');
+        SEOMeta::addKeyword(['Digital Marketing Services', 'SEO Optimization Agency', 'Google Ads PPC Management', 'Social Media Marketing', 'Conversion Rate Optimization', 'B2B Lead Generation']);
         SEOMeta::addMeta('robots', 'index,follow');
 
         return view('pages.digital-marketing');
@@ -239,8 +247,9 @@ class PageController extends Controller
 
     public function msOffice()
     {
-        SEOMeta::setTitle('Nexdev Vision | MS Office Solutions');
-        SEOMeta::setDescription('Smart MS Office solutions for efficient business operations, automation and reporting.');
+        SEOMeta::setTitle('MS Office Automation & Advanced Excel Solutions | Nexdev Vision');
+        SEOMeta::setDescription('Maximize team efficiency with corporate MS Office solutions. We build advanced automated Excel dashboards, custom VBA macros, and investor pitch presentations.');
+        SEOMeta::addKeyword(['MS Office Solutions', 'Excel VBA Automation', 'Custom Excel Modeling', 'Automated Spreadsheets', 'PowerPoint Pitch Deck Design']);
         SEOMeta::addMeta('robots', 'index,follow');
 
         return view('pages.ms-office');
@@ -248,8 +257,9 @@ class PageController extends Controller
 
     public function saas()
     {
-        SEOMeta::setTitle('Nexdev Vision | SaaS Development & Cloud Solutions');
-        SEOMeta::setDescription('Scalable multi-tenant SaaS software engineering with automated recurring billing, robust authentication, and high-performance cloud architecture.');
+        SEOMeta::setTitle('SaaS Application Development & Cloud Architecture | Nexdev Vision');
+        SEOMeta::setDescription('Engineer scalable, multi-tenant cloud software with Nexdev Vision. From rapid MVP development to enterprise recurring billing, API architecture, and AWS deployment.');
+        SEOMeta::addKeyword(['SaaS Development Services', 'Cloud Software Architecture', 'Multi Tenant SaaS', 'SaaS MVP Development', 'Stripe Billing Automation']);
         SEOMeta::addMeta('robots', 'index,follow');
 
         return view('pages.saas');
@@ -257,8 +267,9 @@ class PageController extends Controller
 
     public function automation()
     {
-        SEOMeta::setTitle('Nexdev Vision | Enterprise Workflow Automation');
-        SEOMeta::setDescription('Intelligent business workflow automation, custom bots, RPA, and API integrations that eliminate repetitive work and boost efficiency.');
+        SEOMeta::setTitle('Business Process Automation & RPA Solutions | Nexdev Vision');
+        SEOMeta::setDescription('Eliminate repetitive tasks and scale 24/7 with Nexdev Vision’s workflow automation. Custom API integrations, RPA bots, and automated CRM pipelines.');
+        SEOMeta::addKeyword(['Business Process Automation', 'Workflow Automation Services', 'RPA Bot Development', 'Custom API Integration', 'Zapier Make Automation']);
         SEOMeta::addMeta('robots', 'index,follow');
 
         return view('pages.automation');
@@ -266,8 +277,9 @@ class PageController extends Controller
 
     public function dataAnalytics()
     {
-        SEOMeta::setTitle('Nexdev Vision | Data Analytics & Business Intelligence');
-        SEOMeta::setDescription('Transform complex raw data into actionable revenue growth with custom BI dashboards, automated ETL pipelines, and predictive reporting.');
+        SEOMeta::setTitle('Data Analytics & Business Intelligence Dashboards | Nexdev Vision');
+        SEOMeta::setDescription('Turn complex raw data into profitable revenue strategies. Nexdev Vision delivers live executive KPI dashboards, automated reporting pipelines, and predictive analytics.');
+        SEOMeta::addKeyword(['Data Analytics Services', 'Business Intelligence Dashboards', 'Power BI Reporting', 'Tableau Dashboards', 'Predictive Analytics']);
         SEOMeta::addMeta('robots', 'index,follow');
 
         return view('pages.data-analytics');
@@ -275,8 +287,9 @@ class PageController extends Controller
 
     public function aiEngineering()
     {
-        SEOMeta::setTitle('Nexdev Vision | AI Engineering & Machine Learning');
-        SEOMeta::setDescription('Custom AI agents, LLM integrations, RAG architecture, and deep machine learning solutions built for high-impact real-world applications.');
+        SEOMeta::setTitle('Custom AI Engineering & Autonomous Agent Development | Nexdev Vision');
+        SEOMeta::setDescription('Deploy cutting-edge artificial intelligence with Nexdev Vision. Enterprise autonomous AI agents, fine-tuned LLMs, custom RAG search engines, and computer vision.');
+        SEOMeta::addKeyword(['AI Engineering Services', 'Custom AI Agent Development', 'Enterprise LLM Integration', 'RAG Architecture', 'Generative AI Solutions']);
         SEOMeta::addMeta('robots', 'index,follow');
 
         return view('pages.ai-engineering');
@@ -301,8 +314,9 @@ class PageController extends Controller
 
     public function getQuote()
     {
-        SEOMeta::setTitle('Nexdev Vision | Get a Professional Quote');
-        SEOMeta::setDescription('Request a custom quote for your digital project. We provide detailed estimates for web development, design, and marketing.');
+        SEOMeta::setTitle('Get a Custom Project Quote | Transparent Pricing | Nexdev Vision');
+        SEOMeta::setDescription('Request a free, transparent project quote from Nexdev Vision. Tailored estimates with clear milestones for custom web development, graphic design, and AI automation.');
+        SEOMeta::addKeyword(['Request Project Quote', 'Web Development Cost', 'Graphic Design Estimate', 'Digital Agency Pricing', 'Custom Software Quote']);
         SEOMeta::addMeta('robots', 'index,follow');
 
         return view('pages.quote');
@@ -310,8 +324,8 @@ class PageController extends Controller
 
     public function feedback()
     {
-        SEOMeta::setTitle('Nexdev Vision | Share Your Experience');
-        SEOMeta::setDescription('We value your feedback. Let us know how we can improve our services and share your success stories.');
+        SEOMeta::setTitle('Client Feedback & Suggestions | Nexdev Vision');
+        SEOMeta::setDescription('We value client feedback. Share your project experience and help Nexdev Vision continuously raise the bar for digital innovation and delivery.');
         SEOMeta::addMeta('robots', 'index,follow');
 
         return view('pages.feedback');
@@ -319,8 +333,9 @@ class PageController extends Controller
 
     public function reviews()
     {
-        SEOMeta::setTitle('Nexdev Vision | Client Reviews & Testimonials');
-        SEOMeta::setDescription('Discover what our clients say about Nexdev Vision. Read authentic reviews and success stories from businesses we have helped grow.');
+        SEOMeta::setTitle('Client Reviews & Success Stories | Verified Testimonials | Nexdev Vision');
+        SEOMeta::setDescription('Discover what founders and tech executives say about Nexdev Vision. Read verified reviews and case studies of businesses scaling with our web and AI solutions.');
+        SEOMeta::addKeyword(['Nexdev Vision Reviews', 'Client Testimonials', 'Digital Agency Case Studies', 'Verified Client Feedback']);
         SEOMeta::addMeta('robots', 'index,follow');
 
         $testimonials = [
@@ -412,8 +427,9 @@ class PageController extends Controller
 
     public function about()
     {
-        SEOMeta::setTitle('About Us | Nexdev Vision');
-        SEOMeta::setDescription('Discover the story of Nexdev Vision. With over 13 years of experience, we provide premium digital solutions to help businesses grow globally.');
+        SEOMeta::setTitle('About Us | Global Digital Innovation & Tech Agency | Nexdev Vision');
+        SEOMeta::setDescription('Discover Nexdev Vision—a premier digital innovation agency with 13+ years of excellence delivering custom web development, brand design, and AI automation to clients globally.');
+        SEOMeta::addKeyword(['About Nexdev Vision', 'Digital Agency Team', 'Tech Innovation Company', 'Global Web Development Agency']);
         SEOMeta::addMeta('robots', 'index,follow');
 
         return view('pages.about');
